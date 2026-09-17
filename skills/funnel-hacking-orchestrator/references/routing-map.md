@@ -1,10 +1,10 @@
 # Routing Map
 
-Use the registry as the source of truth. This reference provides curated bundles based on the installed skill names. Start with the lead specialist and add only what the evidence and requested output require.
+This reference provides curated bundles based on the specialist names used by the orchestrator. Start with the lead specialist and add only what the evidence and requested output require. Treat each installed specialist's own description and requirements as authoritative for its availability, inputs, dependencies, useful combinations, and exclusions.
 
 ## Knowledge routing
 
-Consult [`../../../references/INDEX.md`](../../../references/INDEX.md) before loading background knowledge. Load one primary thematic note for the decision and only the source notes needed for attribution or limitations. Use [`../../../references/live-sources.md`](../../../references/live-sources.md) whenever current ads, platform state, benchmarks, payments, trends, policies, or market behavior matter.
+Consult [knowledge-router.md](knowledge-router.md) before loading background knowledge. Select one primary knowledge lens for the decision and add source detail only when attribution or limitations require it. Use [live-sources.md](live-sources.md) whenever current ads, platform state, benchmarks, payments, trends, policies, or market behavior matter.
 
 | Specialist need | Primary knowledge route |
 | --- | --- |
@@ -18,7 +18,7 @@ Consult [`../../../references/INDEX.md`](../../../references/INDEX.md) before lo
 | checkout | `cro/friction-anxiety-and-checkout.md` |
 | Mexico/Brazil localization | `markets/localization.md` + live sources + exactly one market profile |
 
-These paths are relative to the repository `references/` directory. Practitioner frameworks remain practitioner evidence unless a specific claim has independent research support.
+These routes name knowledge lenses; they do not require a repository-level knowledge base. Practitioner frameworks remain practitioner evidence unless a specific claim has independent research support.
 
 ## Discovery and Collection
 

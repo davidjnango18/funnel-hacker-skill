@@ -26,23 +26,23 @@ Read [references/evidence-protocol.md](references/evidence-protocol.md) before m
 
 ## Knowledge Base Router
 
-Before loading background knowledge, consult [`../../references/INDEX.md`](../../references/INDEX.md). Select the smallest relevant thematic note and add source notes only when attribution, limitations, or framework detail is needed. Never load the whole knowledge base indiscriminately.
+Before loading background knowledge, consult [references/knowledge-router.md](references/knowledge-router.md). Select the smallest relevant knowledge lens and add source detail only when attribution, limitations, or framework detail is needed. Never load every topic indiscriminately.
 
-When the question depends on current external state, also consult [`../../references/live-sources.md`](../../references/live-sources.md) and collect fresh evidence. The static knowledge base supplies principles and research questions; it does not prove current ads, platform behavior, market benchmarks, payment methods, or regulations.
+When the question depends on current external state, also consult [references/live-sources.md](references/live-sources.md) and collect fresh evidence. Static knowledge supplies principles and research questions; it does not prove current ads, platform behavior, market benchmarks, payment methods, or regulations.
 
 ## Progressive-Disclosure Router
 
 1. Read [references/source-intake.md](references/source-intake.md) and inventory the supplied and discoverable evidence.
-2. Consult [`../../references/INDEX.md`](../../references/INDEX.md) and load only the smallest relevant knowledge note(s). If freshness is material, follow [`../../references/live-sources.md`](../../references/live-sources.md).
+2. Consult [references/knowledge-router.md](references/knowledge-router.md) and load only the smallest relevant knowledge lens. If freshness is material, follow [references/live-sources.md](references/live-sources.md).
 3. Identify one or more funnel types. Read [references/funnel-taxonomy.md](references/funnel-taxonomy.md) only when classification or hybrid structure needs detail.
-4. Consult `../../config/skills-registry.yaml`. Select the smallest sufficient specialist set by purpose, stage, inputs, dependencies, `recommended_with`, and `avoid_when`.
+4. Consult [references/routing-map.md](references/routing-map.md). Select the smallest sufficient specialist set by purpose, stage, inputs, dependencies, useful combinations, and exclusions.
 5. Record the routing decision: selected knowledge notes and skills, why each is needed, input passed to each specialist, expected output, and deliberately skipped material.
 6. Load only selected specialists. Do not recursively load every related skill they mention.
 7. For a multistep or multichannel journey, read [references/reconstruction-workflow.md](references/reconstruction-workflow.md). For a narrow asset audit, use only the relevant section.
 8. If crossing markets or languages, read [references/market-localization.md](references/market-localization.md) and exactly one market profile: [es-MX](references/markets/es-MX.md), [pt-BR](references/markets/pt-BR.md), or [global](references/markets/global.md).
 9. Before writing a dossier, read [references/output-spec.md](references/output-spec.md).
 
-If the registry is unavailable, use [references/routing-map.md](references/routing-map.md) as the fallback routing index.
+If a named specialist is unavailable, continue with the closest installed specialist or perform the bounded analysis directly; do not expand the selection merely to compensate.
 
 ## Operating Flow
 
