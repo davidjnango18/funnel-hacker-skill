@@ -1,0 +1,10 @@
+{
+  "case_id": "vsl-mexico",
+  "market": "es-MX",
+  "goals": ["reconstruct", "analyze"],
+  "funnel_types": ["VSL"],
+  "assets": ["meta_ads", "landing_page", "vsl_transcript", "checkout"],
+  "video_detected": true,
+  "visual_analysis_required": false,
+  "owned_performance_data": false
+}

@@ -1,0 +1,15 @@
+.upstream-work/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+node_modules/
+artifacts/
+research/**/raw-private/
+*.tmp
+*.log
+

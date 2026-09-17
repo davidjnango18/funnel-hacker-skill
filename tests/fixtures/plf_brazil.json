@@ -1,0 +1,9 @@
+{
+  "case_id": "plf-brazil",
+  "market": "pt-BR",
+  "localize_to": "es-MX",
+  "goals": ["reconstruct", "analyze"],
+  "funnel_types": ["PLF", "CPL"],
+  "assets": ["ads", "optin_page", "cpl_transcripts", "whatsapp_export", "sales_page"],
+  "whatsapp_export": true
+}

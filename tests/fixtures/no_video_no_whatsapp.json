@@ -1,0 +1,6 @@
+{
+  "case_id": "no-video-no-whatsapp",
+  "market": "es-MX",
+  "goals": ["audit"],
+  "assets": ["landing_page", "checkout"]
+}

@@ -1,0 +1,143 @@
+schema_version: 1
+integrated_at: 2026-09-15
+sources:
+  - name: dtc-copywriting-skills
+    url: "https://github.com/coleschaffer/dtc-copywriting-skills"
+    commit: 57cd5a77b8bf0c60b3e565f20d2c306d5803e65d
+    license: MIT
+    selection: "all 44 skills"
+    skills:
+      - ab-test-plan
+      - ad-angle-generator
+      - ad-creative-audit
+      - advertorial-writer
+      - bonus-stack
+      - broadcast-email
+      - cart-abandonment-flow
+      - checkout-abandonment
+      - competitor-offer-analysis
+      - copy-rewrite
+      - creative-brief
+      - email-promo
+      - email-retention-sequences
+      - fb-ad-copy
+      - free-offer-brief
+      - funnel-architecture
+      - funnel-audit
+      - guarantee-writer
+      - hook-battery
+      - ingredient-research
+      - lander-copy
+      - lead-writer
+      - mechanism-ideation
+      - media-buying-brief
+      - offer-stack
+      - order-form-cro
+      - pdp-ecomm-template
+      - post-purchase-sequence
+      - pricing-strategy
+      - reengagement-sequence
+      - rmbc-context
+      - rmbc-copy-audit
+      - rmbc-upgrade
+      - scarcity-urgency
+      - soap-opera-sequence
+      - thank-you-page
+      - ugc-brief
+      - unified-research-synthesizer
+      - upsell-script
+      - upsell-sequence-writer
+      - vsl-script
+      - webinar-registration-copy
+      - welcome-sequence
+      - write-copy
+    local_modifications: "Removed Claude-only installer, telemetry, update, home-workspace, and AskUserQuestion runtime dependencies; fixed RMBC relative paths; added evidence-first rules."
+  - name: corey-marketingskills
+    url: "https://github.com/coreyhaines31/marketingskills"
+    commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+    license: MIT
+    selection: "all 50 skills and referenced tool guides"
+    skills:
+      - ab-testing
+      - ad-creative
+      - ads
+      - ai-seo
+      - analytics
+      - aso
+      - attribution
+      - churn-prevention
+      - co-marketing
+      - cold-email
+      - community-marketing
+      - competitor-profiling
+      - competitors
+      - content-strategy
+      - copy-editing
+      - copywriting
+      - cro
+      - customer-research
+      - directory-submissions
+      - emails
+      - events
+      - free-tools
+      - image
+      - influencer-marketing
+      - launch
+      - lead-magnets
+      - marketing-council
+      - marketing-ideas
+      - marketing-loops
+      - marketing-plan
+      - marketing-psychology
+      - offers
+      - onboarding
+      - paywalls
+      - popups
+      - pricing
+      - product-marketing
+      - programmatic-seo
+      - prospecting
+      - public-relations
+      - referrals
+      - revops
+      - sales-enablement
+      - schema
+      - seo-audit
+      - signup
+      - site-architecture
+      - sms
+      - social
+      - video
+    local_modifications: "Kept all skills; copied each referenced integration guide and optional CLI into its consuming skill; normalized project-local context and Windows-safe wording; added evidence-first rules."
+  - name: plf-walker
+    url: "https://github.com/qwwiwi/plf-walker"
+    commit: 51f064381d02b1ac1161a3b1ccc5b71af1e082d5
+    license: MIT
+    selection: "plf-walker with support files"
+    skills:
+      - plf-walker
+    local_modifications: "Added evidence-first and benchmark-safety overrides; retained methodology, templates, adaptations, references, and shell script; added a portable Python timeline helper."
+  - name: kostja94-marketing-skills
+    url: "https://github.com/kostja94/marketing-skills"
+    commit: 70987bad4ebe9dce1f74858c1c64f3f8810f18e4
+    license: MIT
+    selection: "translation only"
+    skills:
+      - translation
+    local_modifications: "Imported translation only; made localization distinct from literal translation; normalized context path."
+  - name: apify-awesome-skills
+    url: "https://github.com/apify/awesome-skills"
+    commit: c4a23629e6c2ba042853840163f5a88cc371e154
+    license: Apache-2.0
+    selection: "apify-ads-intelligence only"
+    skills:
+      - apify-ads-intelligence
+    local_modifications: "Imported ads intelligence only; disallowed winner/spend/ROAS inference from longevity or observed ad counts; added Windows notes."
+  - name: video-analysis-skill
+    url: "https://github.com/bydfi-official/video-analysis-skill"
+    commit: b2702695f6fdb50457c30e6483af4f4d6240afa7
+    license: MIT
+    selection: "video-analysis with support files"
+    skills:
+      - video-analysis
+    local_modifications: "Installed under the declared skill name; added transcript-first routing and non-blocking missing-video behavior; retained diagnostic stack."

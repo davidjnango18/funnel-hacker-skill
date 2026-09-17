@@ -1,0 +1,2832 @@
+schema_version: 1
+generated_by: scripts/build_catalog.py
+evidence_policy: skills/funnel-hacking-orchestrator/references/evidence-protocol.md
+knowledge_base_index: references/INDEX.md
+live_sources_policy: references/live-sources.md
+skills:
+  - skill_name: ab-test-plan
+    source: dtc-copywriting-skills
+    purpose: "Generate structured A/B test plans for DTC funnels — hypothesis, control vs variant, primary metric, sample size estimate, test duration, and success criteria using RMBC principles."
+    triggers:
+      - "ab test plan"
+    stage: measurement
+    input_types:
+      - "owned baseline"
+      - "metric definitions"
+      - "events or variants"
+      - "time window"
+    output_types:
+      - "measurement plan"
+      - "calculations from owned inputs"
+      - "guardrails"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "guarantee-writer"
+      - "rmbc-copy-audit"
+      - "order-form-cro"
+      - "funnel-audit"
+      - "hook-battery"
+      - "lander-copy"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/ab-test-plan/SKILL.md
+  - skill_name: ab-testing
+    source: corey-marketingskills
+    purpose: "When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions \"A/B test,\" \"split test,\" \"experiment,\" \"test this change,\" \"variant copy,\" \"multivariate test,\" \"hypothesis,\" \"should I test this,\" \"which version is better,\" \"test two versions,\" \"statistical significance,\" \"how long should I run this test,\" \"growth experiments,\" \"experiment velocity,\" \"experiment backlog,\" \"ICE score,\" \"experimentation program,\" or \"experiment playbook.\" Use this whenever someone is comparing two approaches and wants to measure which performs better, or when they want to build a systematic experimentation practice. For tracking implementation, see analytics. For page-level conversion optimization, see cro."
+    triggers:
+      - "ab testing"
+      - "a/b test,"
+      - "split test,"
+      - "experiment,"
+      - "test this change,"
+      - "variant copy,"
+      - "multivariate test,"
+      - "hypothesis,"
+    stage: measurement
+    input_types:
+      - "owned baseline"
+      - "metric definitions"
+      - "events or variants"
+      - "time window"
+    output_types:
+      - "measurement plan"
+      - "calculations from owned inputs"
+      - "guardrails"
+    dependencies: []
+    recommended_with:
+      - "copywriting"
+      - "analytics"
+      - "cro"
+    avoid_when: []
+    priority: high
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/ab-testing/SKILL.md
+  - skill_name: ad-angle-generator
+    source: dtc-copywriting-skills
+    purpose: "Generate 5-7 unique ad angles for paid media campaigns — each a full strategic positioning direction with headline, body, visual, and platform fit."
+    triggers:
+      - "ad angle generator"
+    stage: traffic
+    input_types:
+      - "ad copy/creative"
+      - "audience"
+      - "platform"
+      - "performance data optional"
+    output_types:
+      - "ad/creative analysis or concepts"
+      - "testing notes"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "unified-research-synthesizer"
+      - "advertorial-writer"
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+      - "lead-writer"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/ad-angle-generator/SKILL.md
+  - skill_name: ad-creative
+    source: corey-marketingskills
+    purpose: "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platform. Also use when the user mentions 'ad copy variations,' 'ad creative,' 'generate headlines,' 'RSA headlines,' 'bulk ad copy,' 'ad iterations,' 'creative testing,' 'write me some ads,' 'Facebook ad copy,' 'Google ad headlines,' 'LinkedIn ad text,' 'static ads,' 'ad templates,' 'iMessage ad,' 'chat reveal ad,' 'ChatGPT ad,' 'Apple Notes ad,' 'AirDrop ad,' 'creative strategy,' 'creative roadmap,' 'creative retro,' 'hook writing,' 'creative review page,' 'present ad creative for approval,' 'motion video ad,' 'faceless video ad,' 'UGC ad,' 'greenscreen ad,' 'TikTok/Reels ad format,' 'which ad format to make,' 'Meta ad format tier list,' or 'creative format taxonomy.' Use this whenever someone needs to produce ad copy at scale or iterate on existing ads. For campaign strategy and targeting, see ads. For landing page copy, see copywriting."
+    triggers:
+      - "ad creative"
+      - "ad copy variations,"
+      - "ad creative,"
+      - "generate headlines,"
+      - "rsa headlines,"
+      - "bulk ad copy,"
+      - "ad iterations,"
+      - "creative testing,"
+    stage: traffic
+    input_types:
+      - "ad copy/creative"
+      - "audience"
+      - "platform"
+      - "performance data optional"
+    output_types:
+      - "ad/creative analysis or concepts"
+      - "testing notes"
+    dependencies: []
+    recommended_with:
+      - "marketing-psychology"
+      - "customer-research"
+      - "marketing-loops"
+      - "copy-editing"
+      - "copywriting"
+      - "ab-testing"
+    avoid_when: []
+    priority: high
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/ad-creative/SKILL.md
+  - skill_name: ad-creative-audit
+    source: dtc-copywriting-skills
+    purpose: "Audit paid media ad creative (copy + visual direction) against RMBC and DR principles — score hook, mechanism, proof, CTA, and visual-copy alignment with actionable fixes."
+    triggers:
+      - "ad creative audit"
+    stage: traffic
+    input_types:
+      - "ad copy/creative"
+      - "audience"
+      - "platform"
+      - "performance data optional"
+    output_types:
+      - "ad/creative analysis or concepts"
+      - "testing notes"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+      - "fb-ad-copy"
+      - "ads"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/ad-creative-audit/SKILL.md
+  - skill_name: ads
+    source: corey-marketingskills
+    purpose: "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ROAS,' 'CPA,' 'ad campaign,' 'retargeting,' 'audience targeting,' 'Google Ads,' 'Facebook ads,' 'LinkedIn ads,' 'ad budget,' 'cost per click,' 'ad spend,' 'should I run ads,' 'ABM,' 'account-based marketing,' 'B2B ads,' 'lead quality,' 'negative keywords,' 'Performance Max,' 'thought leader ads,' or 'when should I kill an ad.' Use this for campaign strategy, audience targeting, bidding, and optimization. For bulk ad creative generation and iteration, see ad-creative. For landing page optimization, see cro."
+    triggers:
+      - "ads"
+      - "ppc,"
+      - "paid media,"
+      - "roas,"
+      - "cpa,"
+      - "ad campaign,"
+      - "retargeting,"
+      - "audience targeting,"
+    stage: traffic
+    input_types:
+      - "ad copy/creative"
+      - "audience"
+      - "platform"
+      - "performance data optional"
+    output_types:
+      - "ad/creative analysis or concepts"
+      - "testing notes"
+    dependencies: []
+    recommended_with:
+      - "competitor-profiling"
+      - "customer-research"
+      - "ad-creative"
+      - "attribution"
+      - "copywriting"
+      - "ab-testing"
+    avoid_when: []
+    priority: high
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/ads/SKILL.md
+  - skill_name: advertorial-writer
+    source: dtc-copywriting-skills
+    purpose: "Generate RMBC-structured advertorial and native ad copy that reads like editorial content but drives direct response conversions."
+    triggers:
+      - "advertorial writer"
+    stage: pre-frame
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "unified-research-synthesizer"
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+      - "lander-copy"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/advertorial-writer/SKILL.md
+  - skill_name: ai-seo
+    source: corey-marketingskills
+    purpose: "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,' 'GEO,' 'LLMO,' 'answer engine optimization,' 'generative engine optimization,' 'LLM optimization,' 'AI Overviews,' 'optimize for ChatGPT,' 'optimize for Perplexity,' 'AI citations,' 'AI visibility,' 'zero-click search,' 'how do I show up in AI answers,' 'LLM mentions,' 'optimize for Claude/Gemini,' 'llms.txt,' 'llms-full.txt,' 'OKF,' 'Open Knowledge Format,' 'knowledge bundle,' 'agent-readable site,' 'agent readiness,' 'is my site agent-ready,' 'WebMCP,' 'do listicles still work for AI,' 'ChatGPT stopped citing comparison pages,' or 'AI citation format shift.' Use this whenever someone wants their content to be cited or surfaced by AI assistants and AI search engines. For traditional technical and on-page SEO audits, see seo-audit. For structured data implementation, see schema."
+    triggers:
+      - "ai seo"
+      - "ai seo,"
+      - "aeo,"
+      - "geo,"
+      - "llmo,"
+      - "answer engine optimization,"
+      - "generative engine optimization,"
+      - "llm optimization,"
+    stage: discovery
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "content-strategy"
+      - "programmatic-seo"
+      - "competitors"
+      - "copywriting"
+      - "seo-audit"
+      - "schema"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/ai-seo/SKILL.md
+  - skill_name: analytics
+    source: corey-marketingskills
+    purpose: "When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions \"set up tracking,\" \"GA4,\" \"Google Analytics,\" \"conversion tracking,\" \"event tracking,\" \"UTM parameters,\" \"tag manager,\" \"GTM,\" \"analytics implementation,\" \"tracking plan,\" \"how do I measure this,\" \"track conversions,\" \"Mixpanel,\" \"Segment,\" \"are my events firing,\" or \"analytics isn't working.\" Use this whenever someone asks how to know if something is working or wants to measure marketing results. For choosing attribution models, comparing multi-touch/MMM/incrementality, or reconciling conflicting numbers across tools, see attribution. For A/B test measurement, see ab-testing."
+    triggers:
+      - "analytics"
+      - "set up tracking,"
+      - "ga4,"
+      - "google analytics,"
+      - "conversion tracking,"
+      - "event tracking,"
+      - "utm parameters,"
+      - "tag manager,"
+    stage: measurement
+    input_types:
+      - "owned baseline"
+      - "metric definitions"
+      - "events or variants"
+      - "time window"
+    output_types:
+      - "measurement plan"
+      - "calculations from owned inputs"
+      - "guardrails"
+    dependencies: []
+    recommended_with:
+      - "attribution"
+      - "ab-testing"
+      - "seo-audit"
+      - "revops"
+      - "cro"
+    avoid_when: []
+    priority: high
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/analytics/SKILL.md
+  - skill_name: apify-ads-intelligence
+    source: apify-awesome-skills
+    purpose: "Research, spy on, and analyze ads across Meta (Facebook & Instagram), Google (Ads Transparency Center + paid search results), TikTok (Ads Library + Creative Center), LinkedIn Ad Library, and X (Twitter — promoted tweets, best-effort) using Apify Actors. Use when user asks about competitor ads, ad library research, winning creatives, ad copy analysis, landing page audits from ads, cross-platform ad audits, brand transparency checks, or any task involving paid ad creatives, advertiser data, or ad targeting from public ad libraries."
+    triggers:
+      - "apify ads intelligence"
+    stage: collection
+    input_types:
+      - "advertiser or keyword"
+      - "platform"
+      - "country"
+      - "result limit"
+      - "Apify authentication optional"
+    output_types:
+      - "public ad records"
+      - "observable dates"
+      - "landing destinations"
+      - "collection summary"
+    dependencies:
+      - "Apify CLI when automated collection is used"
+      - "APIFY_TOKEN or apify login"
+      - "optional jq"
+    recommended_with:
+      - "ads"
+      - "ad-creative"
+      - "ad-creative-audit"
+      - "competitor-profiling"
+    avoid_when:
+      - "private/access-controlled data"
+      - "performance conclusions from ad presence or longevity"
+      - "manual evidence is already sufficient"
+    priority: high
+    notes: "Collection/intelligence only. Longevity and observed counts do not prove winner status, spend, ROAS, or profit."
+    path: skills/apify-ads-intelligence/SKILL.md
+  - skill_name: aso
+    source: corey-marketingskills
+    purpose: "When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app listing,' 'improve app visibility,' 'app store ranking,' 'audit my listing,' 'why aren't people downloading my app,' 'improve my app conversion,' 'keyword optimization for app,' or 'compare my app to competitors.' Use when the user shares an App Store or Google Play URL and wants to improve it."
+    triggers:
+      - "aso"
+      - "aso audit,"
+      - "app store optimization,"
+      - "optimize my app listing,"
+      - "improve app visibility,"
+      - "app store ranking,"
+      - "audit my listing,"
+      - "why aren"
+    stage: support
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "customer-research"
+      - "ad-creative"
+      - "attribution"
+      - "analytics"
+      - "cro"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/aso/SKILL.md
+  - skill_name: attribution
+    source: corey-marketingskills
+    purpose: "When the user wants to figure out which marketing actually drives conversions and revenue, choose or interpret an attribution model, or reconcile conflicting numbers across tools. Also use when the user mentions \"attribution,\" \"attribution model,\" \"first-touch vs last-touch,\" \"multi-touch,\" \"which channel drives revenue,\" \"what's my real CAC,\" \"my dashboards disagree,\" \"Google/Meta says X but GA says Y,\" \"media mix model,\" \"MMM,\" \"incrementality,\" \"geo lift,\" \"holdout test,\" \"how did you hear about us,\" \"self-reported attribution,\" \"dark social,\" or wants to instrument attribution themselves — \"stitch my bookings to their source,\" \"SavvyCal/Calendly attribution,\" \"close the identify gap,\" \"track conversions on a third-party domain,\" \"first-party / self-hosted attribution.\" For event tracking setup and UTMs, see analytics. For ad-platform pixels/CAPI, see ads. For pipeline and CRM revenue reporting, see revops. For the AI-search attribution blind spot, see ai-seo."
+    triggers:
+      - "attribution"
+      - "attribution,"
+      - "attribution model,"
+      - "first-touch vs last-touch,"
+      - "multi-touch,"
+      - "which channel drives revenue,"
+      - "what"
+      - "my dashboards disagree,"
+    stage: measurement
+    input_types:
+      - "owned tracking data"
+      - "business model"
+      - "conversion definitions"
+      - "time window"
+    output_types:
+      - "measurement plan"
+      - "calculations from owned inputs"
+      - "guardrails"
+    dependencies: []
+    recommended_with:
+      - "analytics"
+      - "revops"
+      - "ab-testing"
+    avoid_when:
+      - "competitor funnel without owned conversion/revenue data"
+      - "event tracking is not yet defined"
+    priority: high
+    notes: "Use for owned data; an observed competitor journey is not attribution."
+    path: skills/attribution/SKILL.md
+  - skill_name: bonus-stack
+    source: dtc-copywriting-skills
+    purpose: "Design bonus stacks that increase perceived value without increasing fulfillment cost — 3-5 bonuses with name, description, perceived value, actual cost, and core offer complement rationale using RMBC principles."
+    triggers:
+      - "bonus stack"
+    stage: offer
+    input_types:
+      - "offer evidence or brief"
+      - "audience"
+      - "price/proof when known"
+    output_types:
+      - "offer/pricing analysis or original structure"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "mechanism-ideation"
+      - "guarantee-writer"
+      - "rmbc-copy-audit"
+      - "ab-test-plan"
+      - "lander-copy"
+      - "offer-stack"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/bonus-stack/SKILL.md
+  - skill_name: broadcast-email
+    source: dtc-copywriting-skills
+    purpose: "Generate one-off broadcast emails for list engagement — content, story, controversy, case study, or flash promo types with 3 subject line options using RMBC principles."
+    triggers:
+      - "broadcast email"
+    stage: copy
+    input_types:
+      - "source copy or brief"
+      - "audience"
+      - "offer"
+      - "proof assets"
+    output_types:
+      - "copy analysis or original draft"
+      - "evidence gaps"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "soap-opera-sequence"
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+      - "email-promo"
+      - "emails"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/broadcast-email/SKILL.md
+  - skill_name: cart-abandonment-flow
+    source: dtc-copywriting-skills
+    purpose: "Generate a 3-5 email cart abandonment recovery sequence with escalating urgency — from gentle reminder to final scarcity close using RMBC principles."
+    triggers:
+      - "cart abandonment flow"
+    stage: follow-up
+    input_types:
+      - "sequence/export"
+      - "audience state"
+      - "timing"
+      - "offer/context"
+    output_types:
+      - "sequence analysis or original flow"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "post-purchase-sequence"
+      - "mechanism-ideation"
+      - "guarantee-writer"
+      - "rmbc-copy-audit"
+      - "email-promo"
+      - "emails"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/cart-abandonment-flow/SKILL.md
+  - skill_name: checkout-abandonment
+    source: dtc-copywriting-skills
+    purpose: "Diagnose and fix checkout abandonment — audit checkout flow for friction points, score abandonment risk, rank top friction sources by impact, and output specific copy/UX fixes using RMBC principles."
+    triggers:
+      - "checkout abandonment"
+    stage: funnel
+    input_types:
+      - "page or funnel evidence"
+      - "audience"
+      - "offer context"
+      - "owned metrics optional"
+    output_types:
+      - "audit or architecture"
+      - "prioritized hypotheses"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "guarantee-writer"
+      - "rmbc-copy-audit"
+      - "order-form-cro"
+      - "ab-test-plan"
+      - "funnel-audit"
+      - "lander-copy"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/checkout-abandonment/SKILL.md
+  - skill_name: churn-prevention
+    source: corey-marketingskills
+    purpose: "When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use when the user mentions 'churn,' 'cancel flow,' 'offboarding,' 'save offer,' 'dunning,' 'failed payment recovery,' 'win-back,' 'retention,' 'exit survey,' 'pause subscription,' 'involuntary churn,' 'people keep canceling,' 'churn rate is too high,' 'how do I keep users,' or 'customers are leaving.' Use this whenever someone is losing subscribers or wants to build systems to prevent it. For post-cancel win-back email sequences, see emails. For in-app upgrade paywalls, see paywalls."
+    triggers:
+      - "churn prevention"
+      - "churn,"
+      - "cancel flow,"
+      - "offboarding,"
+      - "save offer,"
+      - "dunning,"
+      - "failed payment recovery,"
+      - "win-back,"
+    stage: follow-up
+    input_types:
+      - "sequence/export"
+      - "audience state"
+      - "timing"
+      - "offer/context"
+    output_types:
+      - "sequence analysis or original flow"
+    dependencies: []
+    recommended_with:
+      - "ab-testing"
+      - "onboarding"
+      - "analytics"
+      - "paywalls"
+      - "pricing"
+      - "emails"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/churn-prevention/SKILL.md
+  - skill_name: co-marketing
+    source: corey-marketingskills
+    purpose: "When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'partner marketing,' 'joint campaign,' 'who should we partner with,' 'integration marketing,' 'cross-promotion,' 'collaborate with another company,' 'partnership ideas,' or 'co-brand.' For customer referral programs, see referrals. For launch-specific partnerships, see launch."
+    triggers:
+      - "co marketing"
+      - "co-marketing,"
+      - "partner marketing,"
+      - "joint campaign,"
+      - "who should we partner with,"
+      - "integration marketing,"
+      - "cross-promotion,"
+      - "collaborate with another company,"
+    stage: growth
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "content-strategy"
+      - "sales-enablement"
+      - "referrals"
+      - "launch"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/co-marketing/SKILL.md
+  - skill_name: cold-email
+    source: corey-marketingskills
+    purpose: "Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns, sales development emails, or SDR emails. Also use when the user mentions \"cold outreach,\" \"prospecting email,\" \"outbound email,\" \"email to leads,\" \"reach out to prospects,\" \"sales email,\" \"follow-up email sequence,\" \"nobody's replying to my emails,\" or \"how do I write a cold email.\" Covers subject lines, opening lines, body copy, CTAs, personalization, and multi-touch follow-up sequences. For warm/lifecycle email sequences, see emails. For sales collateral beyond emails, see sales-enablement."
+    triggers:
+      - "cold email"
+      - "cold outreach,"
+      - "prospecting email,"
+      - "outbound email,"
+      - "email to leads,"
+      - "reach out to prospects,"
+      - "sales email,"
+      - "follow-up email sequence,"
+    stage: copy
+    input_types:
+      - "source copy or brief"
+      - "audience"
+      - "offer"
+      - "proof assets"
+    output_types:
+      - "copy analysis or original draft"
+      - "evidence gaps"
+    dependencies: []
+    recommended_with:
+      - "product-marketing"
+      - "copywriting"
+      - "prospecting"
+      - "emails"
+      - "revops"
+      - "social"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/cold-email/SKILL.md
+  - skill_name: community-marketing
+    source: corey-marketingskills
+    purpose: "Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord or Slack community, manage a forum or subreddit, build brand advocates, increase word-of-mouth, drive community-led growth, engage users post-signup, or turn customers into evangelists. Trigger phrases: \"build a community,\" \"community strategy,\" \"Discord community,\" \"Slack community,\" \"community-led growth,\" \"brand advocates,\" \"user community,\" \"forum strategy,\" \"community engagement,\" \"grow our community,\" \"ambassador program,\" \"community flywheel.\""
+    triggers:
+      - "community marketing"
+      - "build a community,"
+      - "community strategy,"
+      - "discord community,"
+      - "slack community,"
+      - "community-led growth,"
+      - "brand advocates,"
+      - "user community,"
+    stage: growth
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "customer-research"
+      - "churn-prevention"
+      - "referrals"
+      - "social"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/community-marketing/SKILL.md
+  - skill_name: competitor-offer-analysis
+    source: dtc-copywriting-skills
+    purpose: "Analyze competitor offers to find positioning gaps — break down pricing, guarantees, bonuses, mechanism claims, proof elements, and weaknesses to generate differentiation recommendations."
+    triggers:
+      - "competitor offer analysis"
+    stage: research
+    input_types:
+      - "product/market brief"
+      - "customer or competitor evidence"
+      - "research question"
+    output_types:
+      - "research synthesis"
+      - "positioning inputs"
+      - "evidence gaps"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "unified-research-synthesizer"
+      - "ad-angle-generator"
+      - "mechanism-ideation"
+      - "pricing-strategy"
+      - "rmbc-copy-audit"
+      - "competitors"
+    avoid_when: []
+    priority: high
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/competitor-offer-analysis/SKILL.md
+  - skill_name: competitor-profiling
+    source: corey-marketingskills
+    purpose: "When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor research,' 'competitor analysis,' 'profile this competitor,' 'analyze competitor,' 'competitive intelligence,' 'competitor deep dive,' 'who are my competitors,' 'competitor landscape,' 'competitor dossier,' 'competitive audit,' or 'research these competitors.' Input is a list of competitor URLs. Output is structured competitor profile markdown files. For creating comparison/alternative pages from profiles, see competitors. For sales-specific battle cards, see sales-enablement."
+    triggers:
+      - "competitor profiling"
+      - "competitor profile,"
+      - "competitor research,"
+      - "competitor analysis,"
+      - "profile this competitor,"
+      - "analyze competitor,"
+      - "competitive intelligence,"
+      - "competitor deep dive,"
+    stage: collection
+    input_types:
+      - "target"
+      - "public sources"
+      - "user-provided evidence"
+      - "scope"
+    output_types:
+      - "source-backed research artifacts"
+    dependencies: []
+    recommended_with:
+      - "customer-research"
+      - "content-strategy"
+      - "sales-enablement"
+      - "competitors"
+      - "prospecting"
+      - "seo-audit"
+    avoid_when: []
+    priority: high
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/competitor-profiling/SKILL.md
+  - skill_name: competitors
+    source: corey-marketingskills
+    purpose: "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement. Also use when the user mentions 'alternative page,' 'vs page,' 'competitor comparison,' 'comparison page,' '[Product] vs [Product],' '[Product] alternative,' 'competitive landing pages,' 'how do we compare to X,' 'battle card,' or 'competitor teardown.' Use this for any content that positions your product against competitors. Covers four formats: singular alternative, plural alternatives, you vs competitor, and competitor vs competitor. For sales-specific competitor docs, see sales-enablement."
+    triggers:
+      - "competitors"
+      - "alternative page,"
+      - "vs page,"
+      - "competitor comparison,"
+      - "comparison page,"
+      - "[product] vs [product],"
+      - "[product] alternative,"
+      - "competitive landing pages,"
+    stage: research
+    input_types:
+      - "product/market brief"
+      - "customer or competitor evidence"
+      - "research question"
+    output_types:
+      - "research synthesis"
+      - "positioning inputs"
+      - "evidence gaps"
+    dependencies: []
+    recommended_with:
+      - "programmatic-seo"
+      - "sales-enablement"
+      - "copywriting"
+      - "seo-audit"
+      - "schema"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/competitors/SKILL.md
+  - skill_name: content-strategy
+    source: corey-marketingskills
+    purpose: "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions \"content strategy,\" \"what should I write about,\" \"content ideas,\" \"blog strategy,\" \"topic clusters,\" \"content planning,\" \"editorial calendar,\" \"content marketing,\" \"content roadmap,\" \"what content should I create,\" \"blog topics,\" \"content pillars,\" or \"I don't know what to write.\" Use this whenever someone needs help deciding what content to produce, not just writing it. For writing individual pieces, see copywriting. For SEO-specific audits, see seo-audit. For social media content specifically, see social."
+    triggers:
+      - "content strategy"
+      - "content strategy,"
+      - "what should i write about,"
+      - "content ideas,"
+      - "blog strategy,"
+      - "topic clusters,"
+      - "content planning,"
+      - "editorial calendar,"
+    stage: discovery
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "site-architecture"
+      - "programmatic-seo"
+      - "copywriting"
+      - "seo-audit"
+      - "ai-seo"
+      - "emails"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/content-strategy/SKILL.md
+  - skill_name: copy-editing
+    source: corey-marketingskills
+    purpose: "When the user wants to edit, review, or improve existing marketing copy, or refresh outdated content. Also use when the user mentions 'edit this copy,' 'review my copy,' 'copy feedback,' 'proofread,' 'polish this,' 'make this better,' 'copy sweep,' 'tighten this up,' 'this reads awkwardly,' 'clean up this text,' 'too wordy,' 'sharpen the messaging,' 'refresh this content,' 'update this page,' 'this content is outdated,' or 'content audit.' Use this when the user already has copy and wants it improved or refreshed rather than rewritten from scratch. For writing new copy, see copywriting."
+    triggers:
+      - "copy editing"
+      - "edit this copy,"
+      - "review my copy,"
+      - "copy feedback,"
+      - "proofread,"
+      - "polish this,"
+      - "make this better,"
+      - "copy sweep,"
+    stage: copy
+    input_types:
+      - "source copy or brief"
+      - "audience"
+      - "offer"
+      - "proof assets"
+    output_types:
+      - "copy analysis or original draft"
+      - "evidence gaps"
+    dependencies: []
+    recommended_with:
+      - "marketing-psychology"
+      - "copywriting"
+      - "ab-testing"
+      - "cro"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/copy-editing/SKILL.md
+  - skill_name: copy-rewrite
+    source: dtc-copywriting-skills
+    purpose: "Rewrite underperforming copy using RMBC framework — audits weaknesses first, then rewrites section by section with before/after comparison and rationale."
+    triggers:
+      - "copy rewrite"
+    stage: copy
+    input_types:
+      - "source copy or brief"
+      - "audience"
+      - "offer"
+      - "proof assets"
+    output_types:
+      - "copy analysis or original draft"
+      - "evidence gaps"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+      - "email-promo"
+      - "lander-copy"
+      - "vsl-script"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/copy-rewrite/SKILL.md
+  - skill_name: copywriting
+    source: corey-marketingskills
+    purpose: "When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says \"write copy for,\" \"improve this copy,\" \"rewrite this page,\" \"marketing copy,\" \"headline help,\" \"CTA copy,\" \"value proposition,\" \"tagline,\" \"subheadline,\" \"hero section copy,\" \"above the fold,\" \"this copy is weak,\" \"make this more compelling,\" or \"help me describe my product.\" Use this whenever someone is working on website text that needs to persuade or convert. For email copy, see emails. For popup copy, see popups. For editing existing copy, see copy-editing. For the offer underneath the copy (bonuses, guarantees, value framing), see offers."
+    triggers:
+      - "copywriting"
+      - "write copy for,"
+      - "improve this copy,"
+      - "rewrite this page,"
+      - "marketing copy,"
+      - "headline help,"
+      - "cta copy,"
+      - "value proposition,"
+    stage: copy
+    input_types:
+      - "source copy or brief"
+      - "audience"
+      - "offer"
+      - "proof assets"
+    output_types:
+      - "copy analysis or original draft"
+      - "evidence gaps"
+    dependencies: []
+    recommended_with:
+      - "copy-editing"
+      - "ab-testing"
+      - "emails"
+      - "popups"
+      - "cro"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/copywriting/SKILL.md
+  - skill_name: creative-brief
+    source: dtc-copywriting-skills
+    purpose: "Generate a strategic creative brief for ad campaigns — the bridge between RMBC strategy and creative execution that you hand to a designer or creative team."
+    triggers:
+      - "creative brief"
+    stage: traffic
+    input_types:
+      - "ad copy/creative"
+      - "audience"
+      - "platform"
+      - "performance data optional"
+    output_types:
+      - "ad/creative analysis or concepts"
+      - "testing notes"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "ad-angle-generator"
+      - "mechanism-ideation"
+      - "media-buying-brief"
+      - "fb-ad-copy"
+      - "ugc-brief"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/creative-brief/SKILL.md
+  - skill_name: cro
+    source: corey-marketingskills
+    purpose: "When the user wants to optimize, improve, or increase conversions on any marketing page or form — including homepage, landing pages, pricing pages, feature pages, lead capture forms, or contact forms. Also use when the user says 'CRO,' 'conversion rate optimization,' 'this page isn't converting,' 'improve conversions,' 'why isn't this page working,' 'my landing page sucks,' 'form abandonment,' 'nobody's converting,' 'low conversion rate,' or 'this page needs work.' Use this even if the user just shares a URL and asks for feedback. For signup/registration flows, see signup. For post-signup activation, see onboarding. For popups/modals, see popups."
+    triggers:
+      - "cro"
+      - "cro,"
+      - "conversion rate optimization,"
+      - "this page isn"
+      - "improve conversions,"
+      - "why isn"
+      - "my landing page sucks,"
+      - "form abandonment,"
+    stage: funnel
+    input_types:
+      - "page or funnel evidence"
+      - "audience"
+      - "offer context"
+      - "owned metrics optional"
+    output_types:
+      - "audit or architecture"
+      - "prioritized hypotheses"
+    dependencies: []
+    recommended_with:
+      - "copywriting"
+      - "ab-testing"
+      - "popups"
+      - "signup"
+    avoid_when: []
+    priority: high
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/cro/SKILL.md
+  - skill_name: customer-research
+    source: corey-marketingskills
+    purpose: "When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions \"customer research,\" \"ICP research,\" \"talk to customers,\" \"analyze transcripts,\" \"customer interviews,\" \"survey analysis,\" \"support ticket analysis,\" \"voice of customer,\" \"VOC,\" \"build personas,\" \"customer personas,\" \"jobs to be done,\" \"JTBD,\" \"what do customers say,\" \"what are customers struggling with,\" \"Reddit mining,\" \"G2 reviews,\" \"review mining,\" \"digital watering holes,\" \"community research,\" \"forum research,\" \"competitor reviews,\" \"customer sentiment,\" \"PMF survey,\" \"product/market fit survey,\" \"customer interview questions,\" \"interview outreach,\" \"Sales Safari,\" or \"find out why customers churn/convert/buy.\" Use for analyzing existing research assets, mining online sources, AND running primary research (interviews and surveys). For writing copy informed by research, see copywriting. For acting on research to improve pages, see cro."
+    triggers:
+      - "customer research"
+      - "customer research,"
+      - "icp research,"
+      - "talk to customers,"
+      - "analyze transcripts,"
+      - "customer interviews,"
+      - "survey analysis,"
+      - "support ticket analysis,"
+    stage: collection
+    input_types:
+      - "target"
+      - "public sources"
+      - "user-provided evidence"
+      - "scope"
+    output_types:
+      - "source-backed research artifacts"
+    dependencies: []
+    recommended_with:
+      - "churn-prevention"
+      - "content-strategy"
+      - "marketing-plan"
+      - "competitors"
+      - "copywriting"
+      - "prospecting"
+    avoid_when: []
+    priority: high
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/customer-research/SKILL.md
+  - skill_name: directory-submissions
+    source: corey-marketingskills
+    purpose: "When the user wants to submit their product to startup, SaaS, AI, agent, MCP, no-code, or review directories for backlinks, domain rating, and discovery. Also use when the user mentions \"directory submissions,\" \"submit to directories,\" \"backlinks from directories,\" \"list my product,\" \"submit to Product Hunt,\" \"BetaList,\" \"TAAFT,\" \"Futurepedia,\" \"G2 listing,\" \"Capterra listing,\" \"AlternativeTo,\" \"SaaSHub,\" \"AI directories,\" \"MCP registry,\" \"agent directory,\" \"dofollow backlinks,\" \"launch directories,\" or \"directory tracker.\" Use this whenever someone is planning the directory layer of a product launch or an ongoing backlink campaign. For the broader launch moment, see launch. For programmatic SEO pages that should live behind these backlinks, see programmatic-seo. For AI citation optimization, see ai-seo."
+    triggers:
+      - "directory submissions"
+      - "directory submissions,"
+      - "submit to directories,"
+      - "backlinks from directories,"
+      - "list my product,"
+      - "submit to product hunt,"
+      - "betalist,"
+      - "taaft,"
+    stage: support
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "community-marketing"
+      - "content-strategy"
+      - "programmatic-seo"
+      - "competitors"
+      - "free-tools"
+      - "ai-seo"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/directory-submissions/SKILL.md
+  - skill_name: email-promo
+    source: dtc-copywriting-skills
+    purpose: "Generate RMBC-structured promotional email copy with A/B subject line variants — short-form, high-impact direct response emails."
+    triggers:
+      - "email promo"
+    stage: copy
+    input_types:
+      - "source copy or brief"
+      - "audience"
+      - "offer"
+      - "proof assets"
+    output_types:
+      - "copy analysis or original draft"
+      - "evidence gaps"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+      - "lander-copy"
+      - "lead-writer"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/email-promo/SKILL.md
+  - skill_name: email-retention-sequences
+    source: dtc-copywriting-skills
+    purpose: "Generate retention/nurture email sequences (5-7 emails) to reduce churn, reinforce purchase decisions, and increase customer lifetime value using RMBC principles."
+    triggers:
+      - "email retention sequences"
+    stage: follow-up
+    input_types:
+      - "sequence/export"
+      - "audience state"
+      - "timing"
+      - "offer/context"
+    output_types:
+      - "sequence analysis or original flow"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "upsell-sequence-writer"
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "email-promo"
+      - "emails"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/email-retention-sequences/SKILL.md
+  - skill_name: emails
+    source: corey-marketingskills
+    purpose: "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions \"email sequence,\" \"drip campaign,\" \"nurture sequence,\" \"onboarding emails,\" \"welcome sequence,\" \"re-engagement emails,\" \"email automation,\" \"lifecycle emails,\" \"trigger-based emails,\" \"email funnel,\" \"email workflow,\" \"what emails should I send,\" \"welcome series,\" or \"email cadence.\" Use this for any multi-email automated flow. For cold outreach emails, see cold-email. For in-app onboarding, see onboarding."
+    triggers:
+      - "emails"
+      - "email sequence,"
+      - "drip campaign,"
+      - "nurture sequence,"
+      - "onboarding emails,"
+      - "welcome sequence,"
+      - "re-engagement emails,"
+      - "email automation,"
+    stage: follow-up
+    input_types:
+      - "sequence/export"
+      - "audience state"
+      - "timing"
+      - "offer/context"
+    output_types:
+      - "sequence analysis or original flow"
+    dependencies: []
+    recommended_with:
+      - "churn-prevention"
+      - "lead-magnets"
+      - "copywriting"
+      - "ab-testing"
+      - "onboarding"
+      - "offers"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/emails/SKILL.md
+  - skill_name: events
+    source: corey-marketingskills
+    purpose: "When the user wants to plan, run, sponsor, speak at, or get pipeline from events — webinars, conferences, trade shows, meetups, dinners, workshops, virtual summits, or user conferences. Also use when the user mentions 'event marketing,' 'field marketing,' 'run a webinar,' 'webinar funnel,' 'show-up rate,' 'should we sponsor,' 'sponsor a conference,' 'trade show booth,' 'booth strategy,' 'event ROI,' 'badge scans,' 'event follow-up,' 'speaking slot,' 'CFP,' 'conference talk,' 'host a dinner,' 'user conference,' or 'virtual summit.' Covers all four roles: hosting, sponsoring/exhibiting, speaking, and attending. For product launch moments, see launch. For the partnership side of joint webinars, see co-marketing. For ongoing community programs, see community-marketing. For podcast appearances, see public-relations. For the email sequences themselves, see emails."
+    triggers:
+      - "events"
+      - "event marketing,"
+      - "field marketing,"
+      - "run a webinar,"
+      - "webinar funnel,"
+      - "show-up rate,"
+      - "should we sponsor,"
+      - "sponsor a conference,"
+    stage: pre-frame
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "community-marketing"
+      - "public-relations"
+      - "co-marketing"
+      - "lead-magnets"
+      - "attribution"
+      - "cold-email"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/events/SKILL.md
+  - skill_name: fb-ad-copy
+    source: dtc-copywriting-skills
+    purpose: "Generate RMBC-structured Facebook/Meta ad copy across single image, carousel, and video formats — 3 hook variations per format with character limits enforced."
+    triggers:
+      - "fb ad copy"
+    stage: traffic
+    input_types:
+      - "ad copy/creative"
+      - "audience"
+      - "platform"
+      - "performance data optional"
+    output_types:
+      - "ad/creative analysis or concepts"
+      - "testing notes"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "ad-angle-generator"
+      - "mechanism-ideation"
+      - "ad-creative-audit"
+      - "hook-battery"
+      - "ugc-brief"
+      - "video"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/fb-ad-copy/SKILL.md
+  - skill_name: free-offer-brief
+    source: dtc-copywriting-skills
+    purpose: "Design free lead magnets and tripwire offers that demonstrate RMBC quality — each brief includes offer name, format, hook angle, landing page headline, perceived value, production cost, and email follow-up strategy."
+    triggers:
+      - "free offer brief"
+    stage: pre-frame
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "funnel-architecture"
+      - "welcome-sequence"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+      - "lander-copy"
+      - "offer-stack"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/free-offer-brief/SKILL.md
+  - skill_name: free-tools
+    source: corey-marketingskills
+    purpose: "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user mentions \"engineering as marketing,\" \"free tool,\" \"marketing tool,\" \"calculator,\" \"generator,\" \"interactive tool,\" \"lead gen tool,\" \"build a tool for leads,\" \"free resource,\" \"ROI calculator,\" \"grader tool,\" \"audit tool,\" \"should I build a free tool,\" or \"tools for lead gen.\" Use this whenever someone wants to build something useful and give it away to attract leads or earn links. For downloadable content lead magnets (ebooks, checklists, templates), see lead-magnets."
+    triggers:
+      - "free tools"
+      - "engineering as marketing,"
+      - "free tool,"
+      - "marketing tool,"
+      - "calculator,"
+      - "generator,"
+      - "interactive tool,"
+      - "lead gen tool,"
+    stage: support
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "lead-magnets"
+      - "analytics"
+      - "seo-audit"
+      - "emails"
+      - "cro"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/free-tools/SKILL.md
+  - skill_name: funnel-architecture
+    source: dtc-copywriting-skills
+    purpose: "Design complete DTC sales funnel architecture — maps the full customer journey from ad to email follow-up with RMBC-aligned copy approach, conversion goals, and KPI targets per step."
+    triggers:
+      - "funnel architecture"
+    stage: funnel
+    input_types:
+      - "page or funnel evidence"
+      - "audience"
+      - "offer context"
+      - "owned metrics optional"
+    output_types:
+      - "audit or architecture"
+      - "prioritized hypotheses"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "email-retention-sequences"
+      - "order-form-cro"
+      - "thank-you-page"
+      - "upsell-script"
+      - "funnel-audit"
+      - "lander-copy"
+    avoid_when: []
+    priority: high
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/funnel-architecture/SKILL.md
+  - skill_name: funnel-audit
+    source: dtc-copywriting-skills
+    purpose: "Audit existing sales funnels against RMBC and CRO best practices — score each step, identify conversion leaks, and output a prioritized fix matrix."
+    triggers:
+      - "funnel audit"
+    stage: funnel
+    input_types:
+      - "page or funnel evidence"
+      - "audience"
+      - "offer context"
+      - "owned metrics optional"
+    output_types:
+      - "audit or architecture"
+      - "prioritized hypotheses"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "funnel-architecture"
+      - "rmbc-copy-audit"
+      - "order-form-cro"
+      - "thank-you-page"
+      - "upsell-script"
+      - "lander-copy"
+    avoid_when:
+      - "monetary-impact estimates without traceable traffic, conversion, and AOV inputs"
+    priority: high
+    notes: "Without traceable owned metrics, monetary impact and expected lift remain UNKNOWN or labeled scenarios."
+    path: skills/funnel-audit/SKILL.md
+  - skill_name: funnel-hacking-orchestrator
+    source: local
+    purpose: "Orchestrate evidence-first competitor funnel research, multichannel reconstruction, analysis, localization, original creative intelligence, and test planning. Use for funnel hacking, competitor journeys, ads-to-landing research, VSL/webinar/PLF/CPL/WhatsApp launches, ecommerce, appointment, low-ticket, high-ticket, or hybrid funnel investigations. Select only the specialist skills needed; do not load the full library."
+    triggers:
+      - "funnel hacking orchestrator"
+    stage: orchestration
+    input_types:
+      - "URLs"
+      - "files"
+      - "transcripts"
+      - "videos"
+      - "ad evidence"
+      - "WhatsApp/email exports"
+      - "research brief"
+    output_types:
+      - "source ledger"
+      - "funnel map"
+      - "evidence-backed dossier"
+      - "opportunities"
+      - "test ideas"
+      - "missing evidence"
+    dependencies: []
+    recommended_with:
+      - "customer-research"
+      - "competitor-profiling"
+      - "funnel-architecture"
+      - "funnel-audit"
+    avoid_when: []
+    priority: high
+    notes: "Control plane. Consult the registry and load only the smallest sufficient specialist set."
+    path: skills/funnel-hacking-orchestrator/SKILL.md
+  - skill_name: guarantee-writer
+    source: dtc-copywriting-skills
+    purpose: "Generate risk-reversal guarantees that convert fence-sitters — money-back, conditional, better-than-money-back, double-your-money, and performance-based with headline, terms, and visual treatment using RMBC principles."
+    triggers:
+      - "guarantee writer"
+    stage: offer
+    input_types:
+      - "offer evidence or brief"
+      - "audience"
+      - "price/proof when known"
+    output_types:
+      - "offer/pricing analysis or original structure"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "checkout-abandonment"
+      - "rmbc-copy-audit"
+      - "order-form-cro"
+      - "ab-test-plan"
+      - "lander-copy"
+      - "offer-stack"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/guarantee-writer/SKILL.md
+  - skill_name: hook-battery
+    source: dtc-copywriting-skills
+    purpose: "Generate 10 scroll-stopping hooks across 5 psychological trigger types — the opening lines that determine whether a prospect reads or scrolls past. One of the 3 core RMBC skills."
+    triggers:
+      - "hook battery"
+    stage: traffic
+    input_types:
+      - "ad copy/creative"
+      - "audience"
+      - "platform"
+      - "performance data optional"
+    output_types:
+      - "ad/creative analysis or concepts"
+      - "testing notes"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "unified-research-synthesizer"
+      - "webinar-registration-copy"
+      - "mechanism-ideation"
+      - "pdp-ecomm-template"
+      - "rmbc-copy-audit"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/hook-battery/SKILL.md
+  - skill_name: image
+    source: corey-marketingskills
+    purpose: "When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or brand assets. Also use when the user mentions 'AI image generation,' 'generate an image,' 'create a graphic,' 'product mockup,' 'hero image,' 'social media graphic,' 'banner image,' 'cover photo,' 'profile banner,' 'listing screenshot,' 'Flux,' 'Flux Kontext,' 'Midjourney,' 'DALL-E,' 'GPT Image,' 'ChatGPT Images,' 'Ideogram,' 'Gemini image,' 'Nano Banana,' 'Recraft,' 'Stable Diffusion,' 'Canva,' 'Figma,' 'image optimization,' 'compress images,' 'WebP,' or 'OG image.' Use this for general-purpose marketing image creation and optimization. For paid ad image creative and platform-specific ad specs, see ad-creative. For video production, see video."
+    triggers:
+      - "image"
+      - "ai image generation,"
+      - "generate an image,"
+      - "create a graphic,"
+      - "product mockup,"
+      - "hero image,"
+      - "social media graphic,"
+      - "banner image,"
+    stage: support
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "directory-submissions"
+      - "ad-creative"
+      - "seo-audit"
+      - "social"
+      - "video"
+      - "aso"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/image/SKILL.md
+  - skill_name: influencer-marketing
+    source: corey-marketingskills
+    purpose: "When the user wants to run influencer, creator, or ambassador partnerships to promote their product — finding and vetting partners, structuring deals, briefing creators, disclosure compliance, and measuring ROI. Also use when the user mentions 'influencer marketing,' 'creator partnerships,' 'sponsorships,' 'YouTube sponsorships,' 'podcast sponsorships,' 'brand ambassador,' 'ambassador program,' 'creator program,' 'UGC creators,' 'tech UGC,' 'UGC creator program,' 'creator network,' 'B2B influencers,' 'thought leader ads,' 'gifting,' 'product seeding,' 'whitelisting creator content,' 'how much to pay an influencer,' or 'FTC disclosure.' For affiliate/referral payout mechanics, see referrals. For community-led advocacy, see community-marketing. For turning creator content into paid ads, see ad-creative."
+    triggers:
+      - "influencer marketing"
+      - "influencer marketing,"
+      - "creator partnerships,"
+      - "sponsorships,"
+      - "youtube sponsorships,"
+      - "podcast sponsorships,"
+      - "brand ambassador,"
+      - "ambassador program,"
+    stage: growth
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "community-marketing"
+      - "customer-research"
+      - "ad-creative"
+      - "attribution"
+      - "cold-email"
+      - "referrals"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/influencer-marketing/SKILL.md
+  - skill_name: ingredient-research
+    source: dtc-copywriting-skills
+    purpose: "Deep research prompt for supplement/product ingredient evidence — gathers studies, claims, citations, and DR-relevant proof points for the R in RMBC"
+    triggers:
+      - "ingredient research"
+    stage: collection
+    input_types:
+      - "target"
+      - "public sources"
+      - "user-provided evidence"
+      - "scope"
+    output_types:
+      - "source-backed research artifacts"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "unified-research-synthesizer"
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/ingredient-research/SKILL.md
+  - skill_name: lander-copy
+    source: dtc-copywriting-skills
+    purpose: "Generate RMBC-structured landing page copy — mobile-first, conversion-optimized, with value-stack pricing and full page architecture."
+    triggers:
+      - "lander copy"
+    stage: funnel
+    input_types:
+      - "page or funnel evidence"
+      - "audience"
+      - "offer context"
+      - "owned metrics optional"
+    output_types:
+      - "audit or architecture"
+      - "prioritized hypotheses"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "advertorial-writer"
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+      - "email-promo"
+      - "lead-writer"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/lander-copy/SKILL.md
+  - skill_name: launch
+    source: corey-marketingskills
+    purpose: "When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,' 'go-to-market,' 'beta launch,' 'early access,' 'waitlist,' 'product update,' 'how do I launch this,' 'launch checklist,' 'GTM plan,' or 'we're about to ship.' Use this whenever someone is preparing to release something publicly. For ongoing marketing after launch, see marketing-ideas. For the offer being launched (bonuses, guarantees, scarcity, naming), see offers."
+    triggers:
+      - "launch"
+      - "launch,"
+      - "product hunt,"
+      - "feature release,"
+      - "announcement,"
+      - "go-to-market,"
+      - "beta launch,"
+      - "early access,"
+    stage: growth
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "marketing-psychology"
+      - "programmatic-seo"
+      - "sales-enablement"
+      - "marketing-ideas"
+      - "onboarding"
+      - "referrals"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/launch/SKILL.md
+  - skill_name: lead-magnets
+    source: corey-marketingskills
+    purpose: "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions \"lead magnet,\" \"gated content,\" \"content upgrade,\" \"downloadable,\" \"ebook,\" \"cheat sheet,\" \"checklist,\" \"template download,\" \"opt-in,\" \"freebie,\" \"PDF download,\" \"resource library,\" \"content offer,\" \"email capture content,\" \"Notion template,\" \"spreadsheet template,\" or \"what should I give away for emails.\" Use this for planning what to create and how to distribute it. For interactive tools as lead magnets, see free-tools. For writing the actual content, see copywriting. For the email sequence after capture, see emails."
+    triggers:
+      - "lead magnets"
+      - "lead magnet,"
+      - "gated content,"
+      - "content upgrade,"
+      - "downloadable,"
+      - "ebook,"
+      - "cheat sheet,"
+      - "checklist,"
+    stage: pre-frame
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "content-strategy"
+      - "copywriting"
+      - "free-tools"
+      - "analytics"
+      - "emails"
+      - "popups"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/lead-magnets/SKILL.md
+  - skill_name: lead-writer
+    source: dtc-copywriting-skills
+    purpose: "Generate the opening lead section of long-form DR copy — the first 200-500 words that determine whether the prospect reads or bounces."
+    triggers:
+      - "lead writer"
+    stage: pre-frame
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "advertorial-writer"
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+      - "lander-copy"
+      - "vsl-script"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/lead-writer/SKILL.md
+  - skill_name: marketing-council
+    source: corey-marketingskills
+    purpose: "When the user wants multiple expert perspectives on a marketing question — a simulated board of advisors staffed by legendary marketers (Seth Godin, David Ogilvy, Eugene Schwartz, April Dunford, Rory Sutherland, Alex Hormozi, Byron Sharp, and more). Also use when the user mentions 'marketing council,' 'board of advisors,' 'advisory board,' 'what would Seth Godin say,' 'what would Ogilvy think,' 'channel Hormozi,' 'get multiple perspectives,' 'debate this,' 'have the council review,' 'marketing mentors,' or asks how a famous marketer would approach their problem. The council gives each advisor's take through their documented frameworks, surfaces where they disagree, and synthesizes a recommendation. For executing the winning direction, hand off to positioning, offers, copywriting, ads, or the relevant skill."
+    triggers:
+      - "marketing council"
+      - "marketing council,"
+      - "board of advisors,"
+      - "advisory board,"
+      - "what would seth godin say,"
+      - "what would ogilvy think,"
+      - "channel hormozi,"
+      - "get multiple perspectives,"
+    stage: orchestration
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "marketing-psychology"
+      - "product-marketing"
+      - "content-strategy"
+      - "copy-editing"
+      - "ad-creative"
+      - "copywriting"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/marketing-council/SKILL.md
+  - skill_name: marketing-ideas
+    source: corey-marketingskills
+    purpose: "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'growth ideas,' 'how to market,' 'marketing strategies,' 'marketing tactics,' 'ways to promote,' 'ideas to grow,' 'what else can I try,' 'I don't know how to market this,' 'brainstorm marketing,' or 'what marketing should I do.' Use this as a starting point whenever someone is stuck or looking for inspiration on how to grow. For specific channel execution, see the relevant skill (ads, social, emails, etc.)."
+    triggers:
+      - "marketing ideas"
+      - "marketing ideas,"
+      - "growth ideas,"
+      - "how to market,"
+      - "marketing strategies,"
+      - "marketing tactics,"
+      - "ways to promote,"
+      - "ideas to grow,"
+    stage: growth
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "programmatic-seo"
+      - "marketing-plan"
+      - "competitors"
+      - "free-tools"
+      - "referrals"
+      - "emails"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/marketing-ideas/SKILL.md
+  - skill_name: marketing-loops
+    source: corey-marketingskills
+    purpose: "When the user wants to set up a recurring, self-running marketing workflow — a repeatable loop an AI agent runs on a cadence (weekly, daily, on a trigger) rather than a one-off task. Also use when the user mentions 'marketing loop,' 'recurring marketing workflow,' 'automate my marketing,' 'marketing on autopilot,' 'weekly marketing review,' 'ad fatigue check,' 'content refresh loop,' 'churn watch,' 'ranking drop alert,' 'always-on marketing,' 'marketing automation workflow,' or 'run this every week.' Use this to pick, adapt, and schedule an ongoing marketing loop that orchestrates the other marketing skills. For one-off marketing ideas, see marketing-ideas. For the experimentation loop specifically, see ab-testing."
+    triggers:
+      - "marketing loops"
+      - "marketing loop,"
+      - "recurring marketing workflow,"
+      - "automate my marketing,"
+      - "marketing on autopilot,"
+      - "weekly marketing review,"
+      - "ad fatigue check,"
+      - "content refresh loop,"
+    stage: growth
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "churn-prevention"
+      - "marketing-ideas"
+      - "ab-testing"
+      - "analytics"
+      - "referrals"
+      - "seo-audit"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/marketing-loops/SKILL.md
+  - skill_name: marketing-plan
+    source: corey-marketingskills
+    purpose: "When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions \"marketing plan,\" \"growth plan,\" \"GTM plan,\" \"go-to-market plan,\" \"AARRR plan,\" \"90-day marketing plan,\" \"12-month marketing roadmap,\" \"fractional CMO plan,\" or \"fCMO plan.\" Generates an exhaustive 13-section plan structured by AARRR (Acquisition, Activation, Retention, Referral, Revenue), customized to the client's current budget, team, and stage, mapped to future funding milestones, cross-referenced with the 139-idea marketing-ideas library and an embedded 17-section current-state audit rubric, with a full marketing operations stack showing which skills and MCP/API integrations execute each part. Outputs a Notion-paste-ready markdown document. For positioning and ICP context before planning, see product-marketing. For stage-specific deep work, see onboarding, signup, emails, referrals, pricing."
+    triggers:
+      - "marketing plan"
+      - "marketing plan,"
+      - "growth plan,"
+      - "gtm plan,"
+      - "go-to-market plan,"
+      - "aarrr plan,"
+      - "90-day marketing plan,"
+      - "12-month marketing roadmap,"
+    stage: orchestration
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "programmatic-seo"
+      - "ad-creative"
+      - "seo-audit"
+      - "pricing"
+      - "ai-seo"
+      - "launch"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/marketing-plan/SKILL.md
+  - skill_name: marketing-psychology
+    source: corey-marketingskills
+    purpose: "When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,' 'mental models,' 'cognitive bias,' 'persuasion,' 'behavioral science,' 'why people buy,' 'decision-making,' 'consumer behavior,' 'anchoring,' 'social proof,' 'scarcity,' 'loss aversion,' 'framing,' or 'nudge.' Use this whenever someone wants to understand or leverage how people think and make decisions in a marketing context. For applying psychology to specific pages, see cro; for pricing tactics, see pricing; for copy framing, see copywriting."
+    triggers:
+      - "marketing psychology"
+      - "psychology,"
+      - "mental models,"
+      - "cognitive bias,"
+      - "persuasion,"
+      - "behavioral science,"
+      - "why people buy,"
+      - "decision-making,"
+    stage: growth
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "copywriting"
+      - "ab-testing"
+      - "pricing"
+      - "popups"
+      - "cro"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/marketing-psychology/SKILL.md
+  - skill_name: mechanism-ideation
+    source: dtc-copywriting-skills
+    purpose: "Ideate novel mechanism angles for a product claim or result — the \"M\" in RMBC. Use when you need unique, specific explanations of WHY a product delivers its promised outcome. Branches for supplements, e-commerce, and info products."
+    triggers:
+      - "mechanism ideation"
+    stage: research
+    input_types:
+      - "product/market brief"
+      - "customer or competitor evidence"
+      - "research question"
+    output_types:
+      - "research synthesis"
+      - "positioning inputs"
+      - "evidence gaps"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "unified-research-synthesizer"
+      - "ingredient-research"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/mechanism-ideation/SKILL.md
+  - skill_name: media-buying-brief
+    source: dtc-copywriting-skills
+    purpose: "Generate strategic media buying briefs — audience targeting, budget allocation, KPI targets, creative rotation, and testing frameworks for paid media campaigns."
+    triggers:
+      - "media buying brief"
+    stage: traffic
+    input_types:
+      - "ad copy/creative"
+      - "audience"
+      - "platform"
+      - "performance data optional"
+    output_types:
+      - "ad/creative analysis or concepts"
+      - "testing notes"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "ad-angle-generator"
+      - "ad-creative-audit"
+      - "creative-brief"
+      - "fb-ad-copy"
+      - "ugc-brief"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/media-buying-brief/SKILL.md
+  - skill_name: offer-stack
+    source: dtc-copywriting-skills
+    purpose: "Design irresistible offer stacks — core offer, bonuses, guarantee, urgency, and price anchoring structured to hit a 10:1 perceived-value-to-price ratio using RMBC principles."
+    triggers:
+      - "offer stack"
+    stage: offer
+    input_types:
+      - "offer evidence or brief"
+      - "audience"
+      - "price/proof when known"
+    output_types:
+      - "offer/pricing analysis or original structure"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "mechanism-ideation"
+      - "guarantee-writer"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+      - "bonus-stack"
+      - "lander-copy"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/offer-stack/SKILL.md
+  - skill_name: offers
+    source: corey-marketingskills
+    purpose: "When the user wants to design, construct, or improve an offer — the thing they actually sell — including value framing, bonus stacking, guarantee design, scarcity/urgency, naming, and payment structure. Also use when the user mentions 'offer,' 'offer design,' 'build an offer,' 'grand slam offer,' 'irresistible offer,' 'value stack,' 'bonus stack,' 'guarantee,' 'risk reversal,' 'money-back guarantee,' 'scarcity,' 'urgency,' 'high-ticket offer,' 'productize a service,' 'naming an offer,' 'payment plan,' 'down-sell,' 'upsell offer,' or 'why isn't my offer converting.' Best for services, agencies, courses, coaching, info products, high-ticket B2B, and direct-response. If you run pure self-serve SaaS, read pricing first — tiers and packaging do more work there. For price level itself (tiers, freemium, value metric), see pricing. For the page that presents the offer, see copywriting. For the launch moment, see launch. For sales collateral, see sales-enablement."
+    triggers:
+      - "offers"
+      - "offer,"
+      - "offer design,"
+      - "build an offer,"
+      - "grand slam offer,"
+      - "irresistible offer,"
+      - "value stack,"
+      - "bonus stack,"
+    stage: offer
+    input_types:
+      - "offer evidence or brief"
+      - "audience"
+      - "price/proof when known"
+    output_types:
+      - "offer/pricing analysis or original structure"
+    dependencies: []
+    recommended_with:
+      - "marketing-psychology"
+      - "sales-enablement"
+      - "copywriting"
+      - "paywalls"
+      - "pricing"
+      - "emails"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/offers/SKILL.md
+  - skill_name: onboarding
+    source: corey-marketingskills
+    purpose: "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions \"onboarding flow,\" \"activation rate,\" \"user activation,\" \"first-run experience,\" \"empty states,\" \"onboarding checklist,\" \"aha moment,\" \"new user experience,\" \"users aren't activating,\" \"nobody completes setup,\" \"low activation rate,\" \"users sign up but don't use the product,\" \"time to value,\" or \"first session experience.\" Use this whenever users are signing up but not sticking around. For signup/registration optimization, see signup. For ongoing email sequences, see emails."
+    triggers:
+      - "onboarding"
+      - "onboarding flow,"
+      - "activation rate,"
+      - "user activation,"
+      - "first-run experience,"
+      - "empty states,"
+      - "onboarding checklist,"
+      - "aha moment,"
+    stage: follow-up
+    input_types:
+      - "sequence/export"
+      - "audience state"
+      - "timing"
+      - "offer/context"
+    output_types:
+      - "sequence analysis or original flow"
+    dependencies: []
+    recommended_with:
+      - "ab-testing"
+      - "paywalls"
+      - "emails"
+      - "signup"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/onboarding/SKILL.md
+  - skill_name: order-form-cro
+    source: dtc-copywriting-skills
+    purpose: "Optimize order form / checkout page copy for conversion — mobile-first layout, trust elements, guarantee copy, bump offers, and friction reduction using RMBC principles."
+    triggers:
+      - "order form cro"
+    stage: funnel
+    input_types:
+      - "page or funnel evidence"
+      - "audience"
+      - "offer context"
+      - "owned metrics optional"
+    output_types:
+      - "audit or architecture"
+      - "prioritized hypotheses"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "funnel-architecture"
+      - "guarantee-writer"
+      - "rmbc-copy-audit"
+      - "upsell-script"
+      - "funnel-audit"
+      - "lander-copy"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/order-form-cro/SKILL.md
+  - skill_name: paywalls
+    source: corey-marketingskills
+    purpose: "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions \"paywall,\" \"upgrade screen,\" \"upgrade modal,\" \"upsell,\" \"feature gate,\" \"convert free to paid,\" \"freemium conversion,\" \"trial expiration screen,\" \"limit reached screen,\" \"plan upgrade prompt,\" \"in-app pricing,\" \"free users won't upgrade,\" \"trial to paid conversion,\" or \"how do I get users to pay.\" Use this for any in-product moment where you're asking users to upgrade. Distinct from public pricing pages (see cro) — this focuses on in-product upgrade moments where the user has already experienced value. For pricing decisions, see pricing."
+    triggers:
+      - "paywalls"
+      - "paywall,"
+      - "upgrade screen,"
+      - "upgrade modal,"
+      - "upsell,"
+      - "feature gate,"
+      - "convert free to paid,"
+      - "freemium conversion,"
+    stage: funnel
+    input_types:
+      - "page or funnel evidence"
+      - "audience"
+      - "offer context"
+      - "owned metrics optional"
+    output_types:
+      - "audit or architecture"
+      - "prioritized hypotheses"
+    dependencies: []
+    recommended_with:
+      - "churn-prevention"
+      - "ab-testing"
+      - "onboarding"
+      - "pricing"
+      - "offers"
+      - "cro"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/paywalls/SKILL.md
+  - skill_name: pdp-ecomm-template
+    source: dtc-copywriting-skills
+    purpose: "Generate RMBC-structured product detail page (PDP) copy for e-commerce — extracts proven structure from top-performing pages and rewrites for a new product."
+    triggers:
+      - "pdp ecomm template"
+    stage: copy
+    input_types:
+      - "source copy or brief"
+      - "audience"
+      - "offer"
+      - "proof assets"
+    output_types:
+      - "copy analysis or original draft"
+      - "evidence gaps"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "unified-research-synthesizer"
+      - "ingredient-research"
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/pdp-ecomm-template/SKILL.md
+  - skill_name: plf-walker
+    source: plf-walker
+    purpose: "Запуск онлайн-продукта по методу Джеффа Уокера – Product Launch Formula (PLF). Используй когда нужно: (1) спланировать запуск курса/инфопродукта/коучинга/SaaS с лимитом мест, (2) построить таймлайн от даты Open Cart назад через Pre-Launch и Pre-Pre-Launch, (3) написать серию подогревающих постов или писем перед стартом продаж, (4) сделать структуру трёх PLC-видео (Opportunity / Transformation / Ownership), (5) спроектировать ежедневную последовательность для Open Cart периода с финальным crescendo, (6) применить ментальные триггеры Уокера (scarcity, social proof, anticipation, reciprocity, community, authority, events), (7) адаптировать PLF под Telegram-канал, email-лист или вебинар. Триггеры: «запуск», «launch», «PLF», «Walker», «Уокер», «open cart», «pre-launch», «product launch formula», «продуктовый запуск», «как запустить курс», «sideways sales letter», «PLC1», «PLC2», «PLC3», «контент-план запуска», «как разогревать перед запуском», «когда открывать продажи», «как продать с лимитом мест»."
+    triggers:
+      - "plf walker"
+    stage: pre-frame
+    input_types:
+      - "launch evidence or brief"
+      - "CPL/PLC assets"
+      - "timeline"
+      - "channel exports optional"
+    output_types:
+      - "PLF/CPL structure"
+      - "launch sequence"
+      - "timeline"
+      - "communications plan"
+    dependencies: []
+    recommended_with:
+      - "funnel-architecture"
+      - "emails"
+      - "competitor-offer-analysis"
+      - "translation"
+    avoid_when:
+      - "evergreen structure with no launch sequence"
+      - "benchmarks are being requested as guaranteed outcomes"
+    priority: high
+    notes: "Treat benchmark files as methodological references, not forecasts or universal targets."
+    path: skills/plf-walker/SKILL.md
+  - skill_name: popups
+    source: corey-marketingskills
+    purpose: "When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes. Also use when the user mentions \"exit intent,\" \"popup conversions,\" \"modal optimization,\" \"lead capture popup,\" \"email popup,\" \"announcement banner,\" \"overlay,\" \"collect emails with a popup,\" \"exit popup,\" \"scroll trigger,\" \"sticky bar,\" or \"notification bar.\" Use this for any overlay or interrupt-style conversion element. For forms outside of popups, see cro. For general page conversion optimization, see cro."
+    triggers:
+      - "popups"
+      - "exit intent,"
+      - "popup conversions,"
+      - "modal optimization,"
+      - "lead capture popup,"
+      - "email popup,"
+      - "announcement banner,"
+      - "overlay,"
+    stage: funnel
+    input_types:
+      - "page or funnel evidence"
+      - "audience"
+      - "offer context"
+      - "owned metrics optional"
+    output_types:
+      - "audit or architecture"
+      - "prioritized hypotheses"
+    dependencies: []
+    recommended_with:
+      - "lead-magnets"
+      - "ab-testing"
+      - "emails"
+      - "cro"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/popups/SKILL.md
+  - skill_name: post-purchase-sequence
+    source: dtc-copywriting-skills
+    purpose: "Generate a 4-5 email post-purchase sequence that reduces buyer's remorse, increases product usage, generates reviews, and sets up the next purchase using RMBC principles."
+    triggers:
+      - "post purchase sequence"
+    stage: follow-up
+    input_types:
+      - "sequence/export"
+      - "audience state"
+      - "timing"
+      - "offer/context"
+    output_types:
+      - "sequence analysis or original flow"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "email-retention-sequences"
+      - "upsell-sequence-writer"
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "email-promo"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/post-purchase-sequence/SKILL.md
+  - skill_name: pricing
+    source: corey-marketingskills
+    purpose: "When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free trial,' 'packaging,' 'price increase,' 'value metric,' 'Van Westendorp,' 'willingness to pay,' 'monetization,' 'how much should I charge,' 'my pricing is wrong,' 'pricing page,' 'annual vs monthly,' 'per seat pricing,' 'should I offer a free plan,' 'pricing page teardown,' 'pricing page audit,' 'is my pricing page AI-readable,' or 'can AI read my pricing.' Use this whenever someone is figuring out what to charge, how to structure their plans, or wants to audit a pricing page (for humans and for the AI agents that shortlist tools). For in-app upgrade screens, see paywalls. For offer construction (bonuses, guarantees, value framing, naming) on services/courses/coaching/high-ticket B2B, see offers."
+    triggers:
+      - "pricing"
+      - "pricing,"
+      - "pricing tiers,"
+      - "freemium,"
+      - "free trial,"
+      - "packaging,"
+      - "price increase,"
+      - "value metric,"
+    stage: offer
+    input_types:
+      - "offer evidence or brief"
+      - "audience"
+      - "price/proof when known"
+    output_types:
+      - "offer/pricing analysis or original structure"
+    dependencies: []
+    recommended_with:
+      - "marketing-psychology"
+      - "churn-prevention"
+      - "sales-enablement"
+      - "copywriting"
+      - "ab-testing"
+      - "ai-seo"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/pricing/SKILL.md
+  - skill_name: pricing-strategy
+    source: dtc-copywriting-skills
+    purpose: "Develop DTC pricing strategy — price anchoring, value-comparison economics, tiered pricing, subscription vs one-time, payment plans, and decoy pricing with 3 presentation formats and competitor context."
+    triggers:
+      - "pricing strategy"
+    stage: offer
+    input_types:
+      - "offer evidence or brief"
+      - "audience"
+      - "price/proof when known"
+    output_types:
+      - "offer/pricing analysis or original structure"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "competitor-offer-analysis"
+      - "scarcity-urgency"
+      - "rmbc-copy-audit"
+      - "order-form-cro"
+      - "lander-copy"
+      - "offer-stack"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/pricing-strategy/SKILL.md
+  - skill_name: product-marketing
+    source: corey-marketingskills
+    purpose: "When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' 'who is my target audience,' 'describe my product,' 'ICP,' 'ideal customer profile,' or wants to avoid repeating foundational information across marketing tasks. Use this at the start of any new project before using other marketing skills — it creates `.agents/product-marketing.md` that all other skills reference for product, audience, and positioning context."
+    triggers:
+      - "product marketing"
+      - "product context,"
+      - "marketing context,"
+      - "set up context,"
+      - "positioning,"
+      - "who is my target audience,"
+      - "describe my product,"
+      - "icp,"
+    stage: research
+    input_types:
+      - "product/market brief"
+      - "customer or competitor evidence"
+      - "research question"
+    output_types:
+      - "research synthesis"
+      - "positioning inputs"
+      - "evidence gaps"
+    dependencies: []
+    recommended_with:
+      - "revops"
+    avoid_when: []
+    priority: high
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/product-marketing/SKILL.md
+  - skill_name: programmatic-seo
+    source: corey-marketingskills
+    purpose: "When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions \"programmatic SEO,\" \"template pages,\" \"pages at scale,\" \"directory pages,\" \"location pages,\" \"[keyword] + [city] pages,\" \"comparison pages,\" \"integration pages,\" \"building many pages for SEO,\" \"pSEO,\" \"generate 100 pages,\" \"data-driven pages,\" or \"templated landing pages.\" Use this whenever someone wants to create many similar pages targeting different keywords or locations. For auditing existing SEO issues, see seo-audit. For content strategy planning, see content-strategy."
+    triggers:
+      - "programmatic seo"
+      - "programmatic seo,"
+      - "template pages,"
+      - "pages at scale,"
+      - "directory pages,"
+      - "location pages,"
+      - "[keyword] + [city] pages,"
+      - "comparison pages,"
+    stage: discovery
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "site-architecture"
+      - "competitors"
+      - "seo-audit"
+      - "launch"
+      - "schema"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/programmatic-seo/SKILL.md
+  - skill_name: prospecting
+    source: corey-marketingskills
+    purpose: "When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses. Also use when the user mentions \"prospecting,\" \"build a prospect list,\" \"find prospects,\" \"find leads,\" \"lead gen list,\" \"find SaaS companies that,\" \"find B2B companies,\" \"find local businesses,\" \"ICP-fit accounts,\" \"who should we go after,\" \"outbound list,\" \"target account list,\" \"find clients near me,\" \"businesses without websites,\" \"prospect research,\" \"qualified leads,\" \"find my first customers,\" \"early adopters,\" \"design partners,\" \"beta users,\" or \"who has this problem.\" Use this for the list-building and qualification phase. For writing the outbound copy after the list is built, see cold-email. For deep competitive research on specific accounts, see competitor-profiling."
+    triggers:
+      - "prospecting"
+      - "prospecting,"
+      - "build a prospect list,"
+      - "find prospects,"
+      - "find leads,"
+      - "lead gen list,"
+      - "find saas companies that,"
+      - "find b2b companies,"
+    stage: growth
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "directory-submissions"
+      - "competitor-profiling"
+      - "customer-research"
+      - "product-marketing"
+      - "sales-enablement"
+      - "cold-email"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/prospecting/SKILL.md
+  - skill_name: public-relations
+    source: corey-marketingskills
+    purpose: "When the user wants help with public relations, earned media, press coverage, journalist outreach, or media strategy (not pull requests). Also use when the user mentions 'PR,' 'public relations,' 'press,' 'press release,' 'press coverage,' 'media outreach,' 'pitch a journalist,' 'get featured,' 'media list,' 'media kit,' 'press kit,' 'newsjacking,' 'news hijack,' 'HARO,' 'Qwoted,' 'Featured,' 'Help A Reporter,' 'reporter request,' 'tech press,' 'TechCrunch,' 'earned media,' 'thought leadership placement,' 'op-ed,' 'guest article,' 'press contacts,' 'podcast prep,' 'going on a podcast,' 'podcast guest,' 'prep me for this podcast,' or 'how do I get press.' Use this for earned media work — finding journalists, pitching stories, newsjacking, prepping podcast appearances, and responding to press requests. For startup/SaaS/AI directory submissions, see directory-submissions. For product launches, see launch. For social-media engagement, see social. For cold-email outreach to prospects, see cold-email."
+    triggers:
+      - "public relations"
+      - "pr,"
+      - "public relations,"
+      - "press,"
+      - "press release,"
+      - "press coverage,"
+      - "media outreach,"
+      - "pitch a journalist,"
+    stage: growth
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with: []
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/public-relations/SKILL.md
+  - skill_name: reengagement-sequence
+    source: dtc-copywriting-skills
+    purpose: "Generate a 3-5 email reengagement sequence for inactive subscribers — from \"we miss you\" through exclusive offer to sunset warning using RMBC principles."
+    triggers:
+      - "reengagement sequence"
+      - "we miss you"
+    stage: follow-up
+    input_types:
+      - "sequence/export"
+      - "audience state"
+      - "timing"
+      - "offer/context"
+    output_types:
+      - "sequence analysis or original flow"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "welcome-sequence"
+      - "broadcast-email"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+      - "email-promo"
+      - "offers"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/reengagement-sequence/SKILL.md
+  - skill_name: referrals
+    source: corey-marketingskills
+    purpose: "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,' 'affiliate,' 'ambassador,' 'word of mouth,' 'viral loop,' 'refer a friend,' 'partner program,' 'referral incentive,' 'how to get referrals,' 'customers referring customers,' or 'affiliate payout.' Use this whenever someone wants existing users or partners to bring in new customers. For launch-specific virality, see launch."
+    triggers:
+      - "referrals"
+      - "referral,"
+      - "affiliate,"
+      - "ambassador,"
+      - "word of mouth,"
+      - "viral loop,"
+      - "refer a friend,"
+      - "partner program,"
+    stage: growth
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "marketing-psychology"
+      - "attribution"
+      - "analytics"
+      - "emails"
+      - "launch"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/referrals/SKILL.md
+  - skill_name: revops
+    source: corey-marketingskills
+    purpose: "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'revenue operations,' 'lead scoring,' 'lead routing,' 'MQL,' 'SQL,' 'pipeline stages,' 'deal desk,' 'CRM automation,' 'marketing-to-sales handoff,' 'data hygiene,' 'leads aren't getting to sales,' 'pipeline management,' 'lead qualification,' or 'when should marketing hand off to sales.' Use this for anything involving the systems and processes that connect marketing to revenue. For cold outreach emails, see cold-email. For email drip campaigns, see emails. For pricing decisions, see pricing."
+    triggers:
+      - "revops"
+      - "revops,"
+      - "revenue operations,"
+      - "lead scoring,"
+      - "lead routing,"
+      - "mql,"
+      - "sql,"
+      - "pipeline stages,"
+    stage: measurement
+    input_types:
+      - "owned baseline"
+      - "metric definitions"
+      - "events or variants"
+      - "time window"
+    output_types:
+      - "measurement plan"
+      - "calculations from owned inputs"
+      - "guardrails"
+    dependencies: []
+    recommended_with:
+      - "sales-enablement"
+      - "attribution"
+      - "prospecting"
+      - "cold-email"
+      - "analytics"
+      - "pricing"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/revops/SKILL.md
+  - skill_name: rmbc-context
+    source: dtc-copywriting-skills
+    purpose: "Foundational RMBC methodology hub — provides shared framework context that all RMBC generative skills read during execution"
+    triggers:
+      - "rmbc context"
+    stage: research
+    input_types:
+      - "product/market brief"
+      - "customer or competitor evidence"
+      - "research question"
+    output_types:
+      - "research synthesis"
+      - "positioning inputs"
+      - "evidence gaps"
+    dependencies: []
+    recommended_with:
+      - "pricing"
+      - "social"
+    avoid_when: []
+    priority: high
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/rmbc-context/SKILL.md
+  - skill_name: rmbc-copy-audit
+    source: dtc-copywriting-skills
+    purpose: "Score copy against the RMBC framework with severity-gated audit flow, per-dimension scoring, and escalation from minor fixes to major rewrites."
+    triggers:
+      - "rmbc copy audit"
+    stage: copy
+    input_types:
+      - "source copy or brief"
+      - "audience"
+      - "offer"
+      - "proof assets"
+    output_types:
+      - "copy analysis or original draft"
+      - "evidence gaps"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "ingredient-research"
+      - "mechanism-ideation"
+      - "hook-battery"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/rmbc-copy-audit/SKILL.md
+  - skill_name: rmbc-upgrade
+    source: dtc-copywriting-skills
+    purpose: "Review and refresh the vendored RMBC skills through this repository's audited upstream sync workflow. Use when asked to update the imported DTC skill snapshot."
+    triggers:
+      - "rmbc upgrade"
+    stage: support
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with: []
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/rmbc-upgrade/SKILL.md
+  - skill_name: sales-enablement
+    source: corey-marketingskills
+    purpose: "When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales deck,' 'pitch deck,' 'one-pager,' 'leave-behind,' 'objection handling,' 'deal-specific ROI analysis,' 'demo script,' 'talk track,' 'sales playbook,' 'proposal template,' 'buyer persona card,' 'help my sales team,' 'sales materials,' or 'what should I give my sales reps.' Use this for any document or asset that helps a sales team close deals. For competitor comparison pages and battle cards, see competitors. For marketing website copy, see copywriting. For cold outreach emails, see cold-email. For the offer being sold (bonuses, guarantees, pricing structure), see offers."
+    triggers:
+      - "sales enablement"
+      - "sales deck,"
+      - "pitch deck,"
+      - "one-pager,"
+      - "leave-behind,"
+      - "objection handling,"
+      - "deal-specific roi analysis,"
+      - "demo script,"
+    stage: support
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "product-marketing"
+      - "competitors"
+      - "copywriting"
+      - "prospecting"
+      - "cold-email"
+      - "pricing"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/sales-enablement/SKILL.md
+  - skill_name: scarcity-urgency
+    source: dtc-copywriting-skills
+    purpose: "Generate ethical scarcity and urgency elements for DTC offers — genuine limited stock, time-limited pricing, bonus deadlines, seasonal relevance, and enrollment caps with copy, visual treatment, and ethical justification."
+    triggers:
+      - "scarcity urgency"
+    stage: offer
+    input_types:
+      - "offer evidence or brief"
+      - "audience"
+      - "price/proof when known"
+    output_types:
+      - "offer/pricing analysis or original structure"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "pricing-strategy"
+      - "broadcast-email"
+      - "rmbc-copy-audit"
+      - "order-form-cro"
+      - "lander-copy"
+      - "offer-stack"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/scarcity-urgency/SKILL.md
+  - skill_name: schema
+    source: corey-marketingskills
+    purpose: "When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions \"schema markup,\" \"structured data,\" \"JSON-LD,\" \"rich snippets,\" \"schema.org,\" \"FAQ schema,\" \"product schema,\" \"review schema,\" \"breadcrumb schema,\" \"Google rich results,\" \"knowledge panel,\" \"star ratings in search,\" or \"add structured data.\" Use this whenever someone wants their pages to show enhanced results in Google. For broader SEO issues, see seo-audit. For AI search optimization, see ai-seo."
+    triggers:
+      - "schema"
+      - "schema markup,"
+      - "structured data,"
+      - "json-ld,"
+      - "rich snippets,"
+      - "schema.org,"
+      - "faq schema,"
+      - "product schema,"
+    stage: discovery
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "site-architecture"
+      - "programmatic-seo"
+      - "seo-audit"
+      - "ai-seo"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/schema/SKILL.md
+  - skill_name: seo-audit
+    source: corey-marketingskills
+    purpose: "When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions \"SEO audit,\" \"technical SEO,\" \"why am I not ranking,\" \"SEO issues,\" \"on-page SEO,\" \"meta tags review,\" \"SEO health check,\" \"my traffic dropped,\" \"lost rankings,\" \"not showing up in Google,\" \"site isn't ranking,\" \"Google update hit me,\" \"page speed,\" \"core web vitals,\" \"crawl errors,\" or \"indexing issues.\" Use this even if the user just says something vague like \"my SEO is bad\" or \"help with SEO\" — start with an audit. For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema. For AI search optimization, see ai-seo."
+    triggers:
+      - "seo audit"
+      - "seo audit,"
+      - "technical seo,"
+      - "why am i not ranking,"
+      - "seo issues,"
+      - "on-page seo,"
+      - "meta tags review,"
+      - "seo health check,"
+    stage: discovery
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "site-architecture"
+      - "programmatic-seo"
+      - "analytics"
+      - "ai-seo"
+      - "schema"
+      - "cro"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/seo-audit/SKILL.md
+  - skill_name: signup
+    source: corey-marketingskills
+    purpose: "When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions \"signup conversions,\" \"registration friction,\" \"signup form optimization,\" \"free trial signup,\" \"reduce signup dropoff,\" \"account creation flow,\" \"people aren't signing up,\" \"signup abandonment,\" \"trial conversion rate,\" \"nobody completes registration,\" \"too many steps to sign up,\" or \"simplify our signup.\" Use this whenever the user has a signup or registration flow that isn't performing. For post-signup onboarding, see onboarding. For lead capture forms (not account creation), see cro."
+    triggers:
+      - "signup"
+      - "signup conversions,"
+      - "registration friction,"
+      - "signup form optimization,"
+      - "free trial signup,"
+      - "reduce signup dropoff,"
+      - "account creation flow,"
+      - "people aren"
+    stage: funnel
+    input_types:
+      - "page or funnel evidence"
+      - "audience"
+      - "offer context"
+      - "owned metrics optional"
+    output_types:
+      - "audit or architecture"
+      - "prioritized hypotheses"
+    dependencies: []
+    recommended_with:
+      - "ab-testing"
+      - "onboarding"
+      - "cro"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/signup/SKILL.md
+  - skill_name: site-architecture
+    source: corey-marketingskills
+    purpose: "When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user mentions \"sitemap,\" \"site map,\" \"visual sitemap,\" \"site structure,\" \"page hierarchy,\" \"information architecture,\" \"IA,\" \"navigation design,\" \"URL structure,\" \"breadcrumbs,\" \"internal linking strategy,\" \"website planning,\" \"what pages do I need,\" \"how should I organize my site,\" or \"site navigation.\" Use this whenever someone is planning what pages a website should have and how they connect. NOT for XML sitemaps (that's technical SEO — see seo-audit). For SEO audits, see seo-audit. For structured data, see schema."
+    triggers:
+      - "site architecture"
+      - "sitemap,"
+      - "site map,"
+      - "visual sitemap,"
+      - "site structure,"
+      - "page hierarchy,"
+      - "information architecture,"
+      - "ia,"
+    stage: discovery
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "content-strategy"
+      - "programmatic-seo"
+      - "competitors"
+      - "seo-audit"
+      - "schema"
+      - "cro"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/site-architecture/SKILL.md
+  - skill_name: sms
+    source: corey-marketingskills
+    purpose: "When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or transactional/auth SMS. Also use when the user mentions \"SMS marketing,\" \"text message campaigns,\" \"SMS sequence,\" \"SMS automation,\" \"abandoned cart text,\" \"post-purchase SMS,\" \"Klaviyo SMS,\" \"Postscript,\" \"Attentive,\" \"Twilio,\" \"A2P 10DLC,\" \"TCPA,\" \"SMS compliance,\" \"short code,\" \"toll-free SMS,\" \"MMS campaign,\" \"should I do SMS,\" or \"SMS vs email.\" For email sequences, see emails. For SMS copy framing, see copywriting. For opt-in popups that capture phone numbers, see popups."
+    triggers:
+      - "sms"
+      - "sms marketing,"
+      - "text message campaigns,"
+      - "sms sequence,"
+      - "sms automation,"
+      - "abandoned cart text,"
+      - "post-purchase sms,"
+      - "klaviyo sms,"
+    stage: follow-up
+    input_types:
+      - "sequence/export"
+      - "audience state"
+      - "timing"
+      - "offer/context"
+    output_types:
+      - "sequence analysis or original flow"
+    dependencies: []
+    recommended_with:
+      - "churn-prevention"
+      - "lead-magnets"
+      - "attribution"
+      - "copywriting"
+      - "ab-testing"
+      - "onboarding"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/sms/SKILL.md
+  - skill_name: soap-opera-sequence
+    source: dtc-copywriting-skills
+    purpose: "Generate a soap opera email sequence (5-7 emails) that uses narrative tension and cliffhangers to build desire and drive conversions through RMBC-structured storytelling."
+    triggers:
+      - "soap opera sequence"
+    stage: follow-up
+    input_types:
+      - "sequence/export"
+      - "audience state"
+      - "timing"
+      - "offer/context"
+    output_types:
+      - "sequence analysis or original flow"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+      - "email-promo"
+      - "lead-writer"
+      - "emails"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/soap-opera-sequence/SKILL.md
+  - skill_name: social
+    source: corey-marketingskills
+    purpose: "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms, or wants to do social listening and engagement triage. Also use when the user mentions 'LinkedIn post,' 'Twitter thread,' 'social media,' 'content calendar,' 'social scheduling,' 'engagement,' 'viral content,' 'what should I post,' 'repurpose this content,' 'tweet ideas,' 'LinkedIn carousel,' 'social media strategy,' 'grow my following,' 'TikTok video,' 'Reels,' 'Shorts,' 'video script,' 'video hook,' 'short-form video,' 'create a reel,' 'social listening,' 'brand mentions,' 'competitor monitoring,' 'top posts to comment on,' 'find people asking for,' 'carousel,' 'slide-by-slide,' or 'document post.' Use this for social media content creation, repurposing, scheduling, short-form video scripting, and social listening. For broader content strategy, see content-strategy. For paid ads, see ad-creative. For earned media, see public-relations."
+    triggers:
+      - "social"
+      - "linkedin post,"
+      - "twitter thread,"
+      - "social media,"
+      - "content calendar,"
+      - "social scheduling,"
+      - "engagement,"
+      - "viral content,"
+    stage: growth
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "marketing-psychology"
+      - "copywriting"
+      - "emails"
+      - "launch"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/social/SKILL.md
+  - skill_name: thank-you-page
+    source: dtc-copywriting-skills
+    purpose: "Generate RMBC-structured thank you / order confirmation page copy — the highest-converting upsell real estate where buyer trust peaks and post-purchase momentum drives action."
+    triggers:
+      - "thank you page"
+    stage: funnel
+    input_types:
+      - "page or funnel evidence"
+      - "audience"
+      - "offer context"
+      - "owned metrics optional"
+    output_types:
+      - "audit or architecture"
+      - "prioritized hypotheses"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "post-purchase-sequence"
+      - "funnel-architecture"
+      - "rmbc-copy-audit"
+      - "order-form-cro"
+      - "upsell-script"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/thank-you-page/SKILL.md
+  - skill_name: translation
+    source: kostja94-marketing-skills
+    purpose: "When the user wants to translate content, create translation workflows, manage terminology, or optimize translation quality. Also use when the user mentions \"translate,\" \"translation,\" \"localization copy,\" \"glossary,\" \"terminology,\" \"style guide translation,\" \"machine translation,\" \"human translation,\" \"TMS,\" or \"multilingual content.\" For strategy, use localization-strategy."
+    triggers:
+      - "translation"
+      - "translate,"
+      - "translation,"
+      - "localization copy,"
+      - "glossary,"
+      - "terminology,"
+      - "style guide translation,"
+      - "machine translation,"
+    stage: localization
+    input_types:
+      - "source content"
+      - "source locale"
+      - "target locale"
+      - "market brief"
+      - "glossary optional"
+    output_types:
+      - "translator brief"
+      - "translation"
+      - "glossary/style notes"
+      - "localization QA"
+    dependencies: []
+    recommended_with:
+      - "copywriting"
+      - "customer-research"
+      - "funnel-hacking-orchestrator"
+    avoid_when:
+      - "market strategy is needed without source content"
+      - "literal translation would be mistaken for localization"
+    priority: high
+    notes: "Keep semantic translation and market localization separate; preserve the original."
+    path: skills/translation/SKILL.md
+  - skill_name: ugc-brief
+    source: dtc-copywriting-skills
+    purpose: "Generate briefs for UGC creators — script outlines with talking points, hook options, and B-roll suggestions that feel authentic, not scripted."
+    triggers:
+      - "ugc brief"
+    stage: traffic
+    input_types:
+      - "ad copy/creative"
+      - "audience"
+      - "platform"
+      - "performance data optional"
+    output_types:
+      - "ad/creative analysis or concepts"
+      - "testing notes"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "ad-angle-generator"
+      - "mechanism-ideation"
+      - "ad-creative-audit"
+      - "creative-brief"
+      - "hook-battery"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/ugc-brief/SKILL.md
+  - skill_name: unified-research-synthesizer
+    source: dtc-copywriting-skills
+    purpose: "Synthesize multi-source research into a single Unified Research Document — the copy-ready strategic brief that bridges Research and Brief in RMBC."
+    triggers:
+      - "unified research synthesizer"
+    stage: research
+    input_types:
+      - "product/market brief"
+      - "customer or competitor evidence"
+      - "research question"
+    output_types:
+      - "research synthesis"
+      - "positioning inputs"
+      - "evidence gaps"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "webinar-registration-copy"
+      - "ingredient-research"
+      - "mechanism-ideation"
+      - "pdp-ecomm-template"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+    avoid_when: []
+    priority: high
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/unified-research-synthesizer/SKILL.md
+  - skill_name: upsell-script
+    source: dtc-copywriting-skills
+    purpose: "Generate RMBC-structured one-time offer (OTO) / upsell page scripts — post-purchase pages that capitalize on buying momentum with a complementary offer."
+    triggers:
+      - "upsell script"
+    stage: offer
+    input_types:
+      - "offer evidence or brief"
+      - "audience"
+      - "price/proof when known"
+    output_types:
+      - "offer/pricing analysis or original structure"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "upsell-sequence-writer"
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "lander-copy"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/upsell-script/SKILL.md
+  - skill_name: upsell-sequence-writer
+    source: dtc-copywriting-skills
+    purpose: "Generate post-purchase email upsell sequences (3-5 emails) that ascend customers from initial purchase to higher-ticket offers using RMBC-structured persuasion."
+    triggers:
+      - "upsell sequence writer"
+    stage: follow-up
+    input_types:
+      - "sequence/export"
+      - "audience state"
+      - "timing"
+      - "offer/context"
+    output_types:
+      - "sequence analysis or original flow"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "upsell-script"
+      - "hook-battery"
+      - "email-promo"
+      - "emails"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/upsell-sequence-writer/SKILL.md
+  - skill_name: video
+    source: corey-marketingskills
+    purpose: "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
+    triggers:
+      - "video"
+      - "video production,"
+      - "ai video,"
+      - "remotion,"
+      - "hyperframes,"
+      - "heygen,"
+      - "synthesia,"
+      - "veo,"
+    stage: support
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "marketing-psychology"
+      - "ad-creative"
+      - "copywriting"
+      - "social"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/video/SKILL.md
+  - skill_name: video-analysis
+    source: video-analysis-skill
+    purpose: "Use when a user asks an AI agent to analyze a local video, supported video URL, screen recording, social clip, subtitles, visible frames, on-screen text, or spoken content with evidence-backed artifacts before making claims."
+    triggers:
+      - "video analysis"
+    stage: collection
+    input_types:
+      - "local video or supported URL"
+      - "subtitles optional"
+      - "analysis question"
+    output_types:
+      - "manifest"
+      - "metadata"
+      - "sampled frames"
+      - "contact sheet"
+      - "subtitle/OCR/ASR artifacts optional"
+    dependencies:
+      - "Python 3.10+"
+      - "FFmpeg"
+      - "FFprobe"
+      - "Pillow"
+      - "optional yt-dlp/Tesseract/faster-whisper/Docker"
+    recommended_with:
+      - "vsl-script"
+      - "rmbc-copy-audit"
+      - "funnel-hacking-orchestrator"
+    avoid_when:
+      - "transcript fully answers the question and visuals are irrelevant"
+      - "no video exists"
+    priority: high
+    notes: "Transcript-first for spoken copy. Missing/inaccessible video is non-blocking."
+    path: skills/video-analysis/SKILL.md
+  - skill_name: vsl-script
+    source: dtc-copywriting-skills
+    purpose: "Generate RMBC-structured video sales letter scripts with timing markers — the highest-converting long-form format in direct response."
+    triggers:
+      - "vsl script"
+    stage: copy
+    input_types:
+      - "source copy or brief"
+      - "audience"
+      - "offer"
+      - "proof assets"
+    output_types:
+      - "copy analysis or original draft"
+      - "evidence gaps"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "ingredient-research"
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+      - "lead-writer"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/vsl-script/SKILL.md
+  - skill_name: webinar-registration-copy
+    source: dtc-copywriting-skills
+    purpose: "Generate RMBC-structured webinar/VSL registration page copy. Short, punchy, mobile-optimized registration pages for high-ticket funnels — optimized for registrations, not sales."
+    triggers:
+      - "webinar registration copy"
+    stage: pre-frame
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "unified-research-synthesizer"
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/webinar-registration-copy/SKILL.md
+  - skill_name: welcome-sequence
+    source: dtc-copywriting-skills
+    purpose: "Generate a 5-7 email welcome sequence for new subscribers or buyers — arc from first impression through value delivery to first offer using RMBC principles."
+    triggers:
+      - "welcome sequence"
+    stage: follow-up
+    input_types:
+      - "sequence/export"
+      - "audience state"
+      - "timing"
+      - "offer/context"
+    output_types:
+      - "sequence analysis or original flow"
+    dependencies:
+      - "rmbc-context"
+    recommended_with:
+      - "post-purchase-sequence"
+      - "mechanism-ideation"
+      - "rmbc-copy-audit"
+      - "hook-battery"
+      - "email-promo"
+      - "emails"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/welcome-sequence/SKILL.md
+  - skill_name: write-copy
+    source: dtc-copywriting-skills
+    purpose: "Route DTC copy requests to the smallest appropriate RMBC specialist. Use when a request spans hooks, ads, email, landing pages, VSLs, offers, funnel assets, audits, research synthesis, CRO, testing, retention, briefs, pricing, or RMBC context and the correct specialist is not yet clear."
+    triggers:
+      - "write copy"
+    stage: orchestration
+    input_types:
+      - "task brief"
+      - "available evidence"
+      - "constraints"
+    output_types:
+      - "specialist recommendations or deliverable"
+    dependencies: []
+    recommended_with:
+      - "unified-research-synthesizer"
+      - "competitor-offer-analysis"
+      - "email-retention-sequences"
+      - "webinar-registration-copy"
+      - "post-purchase-sequence"
+      - "upsell-sequence-writer"
+    avoid_when: []
+    priority: medium
+    notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
+    path: skills/write-copy/SKILL.md

@@ -1,0 +1,8 @@
+{
+  "case_id": "whatsapp-link-only",
+  "market": "pt-BR",
+  "goals": ["reconstruct"],
+  "assets": ["landing_page", "whatsapp_link"],
+  "whatsapp_detected": true,
+  "whatsapp_export": false
+}

@@ -1,0 +1,6 @@
+{
+  "case_id": "simple-landing-routing",
+  "market": "global",
+  "goals": ["analyze"],
+  "assets": ["landing_page"]
+}

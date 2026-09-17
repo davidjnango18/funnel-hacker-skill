@@ -1,0 +1,8 @@
+{
+  "case_id": "ad-longevity",
+  "market": "es-MX",
+  "goals": ["analyze"],
+  "assets": ["meta_ads"],
+  "observed_ad_longevity": true,
+  "collect_public_ads": true
+}

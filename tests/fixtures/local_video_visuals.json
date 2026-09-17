@@ -1,0 +1,9 @@
+{
+  "case_id": "local-video-visuals",
+  "market": "pt-BR",
+  "goals": ["analyze"],
+  "funnel_types": ["webinar"],
+  "assets": ["webinar_transcript", "local_video"],
+  "local_video": true,
+  "visual_analysis_required": true
+}

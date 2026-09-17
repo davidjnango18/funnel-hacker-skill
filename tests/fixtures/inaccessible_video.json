@@ -1,0 +1,9 @@
+{
+  "case_id": "inaccessible-video",
+  "market": "global",
+  "goals": ["reconstruct"],
+  "funnel_types": ["VSL"],
+  "assets": ["landing_page", "embedded_video"],
+  "video_detected": true,
+  "local_video": false
+}

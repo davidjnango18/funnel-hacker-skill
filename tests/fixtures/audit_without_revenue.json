@@ -1,0 +1,7 @@
+{
+  "case_id": "audit-without-revenue",
+  "market": "global",
+  "goals": ["funnel_audit"],
+  "assets": ["landing_page", "order_form"],
+  "owned_performance_data": false
+}
