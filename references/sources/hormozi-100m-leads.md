@@ -10,7 +10,7 @@
 - **Evidence level:** `practitioner_framework`
 - **Temporal sensitivity:** `semi-evergreen`; channel tactics, platform economics, and examples are `time-sensitive`
 - **Primary funnel stages:** acquisition, lead generation, lead magnet, partner distribution
-- **Recommended for:** `lead-magnets`, `ads`, `ad-creative`, `content-strategy`, `cold-email`, `prospecting`, `referrals`, `influencer-marketing`
+- **Recommended for:** `lead-magnets`, `ads`, `funnel-ad-creative`, `content-strategy`, `cold-email`, `prospecting`, `referrals`, `influencer-marketing`
 
 ## Why this source matters
 

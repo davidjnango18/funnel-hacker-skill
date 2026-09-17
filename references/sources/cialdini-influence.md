@@ -10,7 +10,7 @@
 - **Evidence level:** `research_backed` at the principle level; anecdotes remain `case_example`
 - **Temporal sensitivity:** `evergreen`, with study replication and context requiring current verification for high-stakes claims
 - **Primary funnel stages:** messaging, proof, offer presentation, checkout, follow-up
-- **Recommended for:** `marketing-psychology`, `copywriting`, `ad-creative`, `vsl-script`, `offer-stack`, `scarcity-urgency`, `funnel-audit`
+- **Recommended for:** `marketing-psychology`, `copywriting`, `funnel-ad-creative`, `vsl-script`, `offer-stack`, `scarcity-urgency`, `funnel-audit`
 
 ## Why this source matters
 

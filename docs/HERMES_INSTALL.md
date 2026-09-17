@@ -23,6 +23,8 @@ hermes skills install <OWNER>/<REPO>/plf-walker
 hermes skills install <OWNER>/<REPO>/video-analysis
 ```
 
+This tap publishes its evidence-first creative variant as `funnel-ad-creative`. If the canonical `ad-creative` from `coreyhaines31/marketingskills` is already installed, it may remain in place; install `funnel-ad-creative` only when this repository's evidence rules and self-contained Hermes references are required. The distinct name avoids a same-name/source-category collision without modifying or removing the preexisting skill.
+
 Install `rmbc-context` alongside any DTC/RMBC specialist whose registry entry lists it as a dependency:
 
 ```powershell

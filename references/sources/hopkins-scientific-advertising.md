@@ -10,7 +10,7 @@
 - **Evidence level:** `principle_classic`
 - **Temporal sensitivity:** `evergreen` for measurement discipline; `time-sensitive` for media, operational tactics, and social assumptions
 - **Primary funnel stages:** acquisition, offer presentation, sampling, measurement
-- **Recommended for:** `ads`, `ad-creative`, `copywriting`, `funnel-audit`, `ab-testing`, `analytics`
+- **Recommended for:** `ads`, `funnel-ad-creative`, `copywriting`, `funnel-audit`, `ab-testing`, `analytics`
 
 ## Why this source matters
 

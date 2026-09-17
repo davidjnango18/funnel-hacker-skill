@@ -47,4 +47,4 @@ Do not declare a winner from short-term conversion alone. Include acquisition qu
 
 ## Recommended specialists
 
-`product-marketing`, `customer-research`, `competitor-profiling`, `ads`, `ad-creative`, `copywriting`, `analytics`
+`product-marketing`, `customer-research`, `competitor-profiling`, `ads`, `funnel-ad-creative`, `copywriting`, `analytics`

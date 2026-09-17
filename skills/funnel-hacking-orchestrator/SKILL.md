@@ -67,7 +67,7 @@ Use [references/routing-map.md](references/routing-map.md) for full combinations
 
 | Need | Start with | Add only when needed |
 | --- | --- | --- |
-| Public ad collection | `apify-ads-intelligence` | `ads`, `ad-creative`, `ad-creative-audit`, `hook-battery` |
+| Public ad collection | `apify-ads-intelligence` | `ads`, `funnel-ad-creative`, `ad-creative-audit`, `hook-battery` |
 | Competitor/site dossier | `competitor-profiling` | `customer-research`, `competitor-offer-analysis` |
 | Funnel map | `funnel-architecture` | `funnel-audit`, stage-specific page/offer specialists |
 | VSL spoken analysis | transcript + `vsl-script` | `video-analysis` only for visual evidence; `rmbc-copy-audit` for copy |

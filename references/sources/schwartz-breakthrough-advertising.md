@@ -10,7 +10,7 @@
 - **Evidence level:** `principle_classic`
 - **Temporal sensitivity:** `evergreen` as a diagnostic language; examples and prescriptions are `semi-evergreen`
 - **Primary funnel stages:** research, acquisition, message-market fit, sales page/VSL
-- **Recommended for:** `customer-research`, `ad-angle-generator`, `hook-battery`, `ad-creative`, `copywriting`, `lander-copy`, `vsl-script`, `rmbc-copy-audit`
+- **Recommended for:** `customer-research`, `ad-angle-generator`, `hook-battery`, `funnel-ad-creative`, `copywriting`, `lander-copy`, `vsl-script`, `rmbc-copy-audit`
 
 ## Why this source matters
 

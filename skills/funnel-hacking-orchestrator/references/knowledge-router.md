@@ -25,7 +25,7 @@ Never load every lens for one investigation. A lens is a research direction, not
 | funnel map or architecture | stages, transitions, branches, follow-up, and value ladder | stage-specific evidence | `funnel-architecture`, `funnel-audit` |
 | PLF, CPL, or timed launch | prelaunch sequence, open cart, close, and follow-up | chronology and launch communications | `plf-walker`, `funnel-architecture`, `emails` |
 | VSL or webinar argument | awareness, persuasion, offer, and spoken structure | transcript evidence; visuals only when material | `vsl-script`, `rmbc-copy-audit`, optional `video-analysis` |
-| ads, creative, hooks, or angles | creative strategy, awareness, format, and message variation | current platform and competitor evidence | `apify-ads-intelligence`, `ads`, `ad-creative`, `hook-battery` |
+| ads, creative, hooks, or angles | creative strategy, awareness, format, and message variation | current platform and competitor evidence | `apify-ads-intelligence`, `ads`, `funnel-ad-creative`, `hook-battery` |
 | lead generation | problem-to-offer bridge, lead magnet, and channel fit | experiment design and current acquisition context | `lead-magnets`, `free-offer-brief`, `ads`, `content-strategy` |
 | offer, pricing, guarantee, or bonus | value, packaging, price, risk reversal, and proof | positioning and current market/payment context | `offers`, `offer-stack`, `pricing-strategy`, `guarantee-writer` |
 | upsell or value ladder | offer sequence, continuity, and post-purchase fit | checkout and follow-up evidence | `upsell-script`, `offer-stack`, `order-form-cro` |

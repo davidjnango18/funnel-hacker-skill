@@ -1,6 +1,6 @@
 ---
 name: ads
-description: "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ROAS,' 'CPA,' 'ad campaign,' 'retargeting,' 'audience targeting,' 'Google Ads,' 'Facebook ads,' 'LinkedIn ads,' 'ad budget,' 'cost per click,' 'ad spend,' 'should I run ads,' 'ABM,' 'account-based marketing,' 'B2B ads,' 'lead quality,' 'negative keywords,' 'Performance Max,' 'thought leader ads,' or 'when should I kill an ad.' Use this for campaign strategy, audience targeting, bidding, and optimization. For bulk ad creative generation and iteration, see ad-creative. For landing page optimization, see cro."
+description: "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ROAS,' 'CPA,' 'ad campaign,' 'retargeting,' 'audience targeting,' 'Google Ads,' 'Facebook ads,' 'LinkedIn ads,' 'ad budget,' 'cost per click,' 'ad spend,' 'should I run ads,' 'ABM,' 'account-based marketing,' 'B2B ads,' 'lead quality,' 'negative keywords,' 'Performance Max,' 'thought leader ads,' or 'when should I kill an ad.' Use this for campaign strategy, audience targeting, bidding, and optimization. For bulk ad creative generation and iteration, see funnel-ad-creative. For landing page optimization, see cro."
 metadata:
   version: 2.3.2
 ---
@@ -501,7 +501,7 @@ For tracking setup, see [references/conversion-tracking.md](references/conversio
 
 ## Related Skills
 
-- **ad-creative**: For generating and iterating ad headlines, descriptions, and creative at scale
+- **funnel-ad-creative**: For generating and iterating ad headlines, descriptions, and creative at scale
 - **revops**: For the CRM side of ABM — lead scoring, routing, and the offline conversion loop
 - **customer-research / competitor-profiling / positioning**: Voice-of-customer that feeds ad copy and angles; and turning an organic-teardown shortlist + the personas doc from [creative-research-automation.md](references/creative-research-automation.md) into full competitor dossiers and positioning
 - **copywriting**: For landing page copy that converts ad traffic

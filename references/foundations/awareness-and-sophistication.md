@@ -57,4 +57,4 @@ Demographics alone are insufficient. Store the result as a hypothesis when direc
 
 ## Recommended specialists
 
-`customer-research`, `ad-angle-generator`, `hook-battery`, `ad-creative`, `copywriting`, `lander-copy`, `vsl-script`, `lead-writer`
+`customer-research`, `ad-angle-generator`, `hook-battery`, `funnel-ad-creative`, `copywriting`, `lander-copy`, `vsl-script`, `lead-writer`

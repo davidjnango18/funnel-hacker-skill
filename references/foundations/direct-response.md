@@ -45,7 +45,7 @@ For each funnel asset record:
 
 ## Recommended specialists
 
-`copywriting`, `ad-creative`, `lander-copy`, `vsl-script`, `emails`, `cro`, `analytics`, `ab-testing`
+`copywriting`, `funnel-ad-creative`, `lander-copy`, `vsl-script`, `emails`, `cro`, `analytics`, `ab-testing`
 
 ## Evidence boundary
 

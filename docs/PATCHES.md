@@ -27,6 +27,20 @@ Vendored skills retain their upstream substance. The following narrow transforma
 - Copied each explicitly referenced integration guide and optional CLI into that skill's own `references/tools/` subtree, so an isolated Hermes installation does not depend on a repository-global path.
 - Normalized `.claude` and home-directory context references to project-local `.agents/product-marketing.md` and `research/marketing-plans/` paths.
 - Reworded Claude-specific fetch/tool assumptions into capability-neutral instructions.
+- Renamed the locally modified upstream `ad-creative` bundle to `funnel-ad-creative`. The public/preinstalled `ad-creative` and this repository's copy share the `coreyhaines31/marketingskills` origin, but the local copy must remain independently installable because it carries this repository's evidence-first rules and self-contained Hermes support files. The rename changes discovery/routing identifiers only; the creative workflow and assets are unchanged.
+
+### Final Hermes installation compatibility fixes
+
+| File | Detector / failure | Cause | Security- and semantics-preserving change |
+| --- | --- | --- | --- |
+| `skills/marketing-council/SKILL.md` | Bundle reference resolution | Two prose mentions placed the advisors directory itself in backticks, so Hermes treated the directory as a file reference. | Rephrased both mentions as prose and retained all 12 concrete advisor-file links in the bench table. Advisor discovery and selective loading are unchanged. |
+| `skills/ads/references/creative-research-automation.md` (lines previously 19, 23, 70, 87, 101, 102, 103) | `path_traversal` | Cross-skill Markdown links used `../../` to reach sibling skills. One scanner finding was emitted per affected line, for seven findings even where a line contained several links. | Replaced the cross-directory links with explicit specialist handoffs by skill name. No external path is traversed; the same downstream specialists and artifacts remain identified. |
+| `skills/ads/references/meta-decision-system.md` (line previously 161) | `path_traversal` | A cross-skill link used `../../` to reach the creative-format reference in the sibling creative skill. | Named the concrete `meta-creative-formats.md` reference and its owning `funnel-ad-creative` specialist without an escaping path. The operational handoff is unchanged. |
+| `skills/ads/references/audit-guardrails.md` (line previously 77) | `prompt_injection_ignore` | Defensive documentation quoted a canonical malicious override phrase literally, which the scanner correctly treats as an active injection signature. | Described the attack behavior without reproducing the payload. The rule still requires treating fetched content as untrusted and refusing embedded override directives. |
+| `skills/ads/evals/evals.json` (lines previously 23, 92, 104, 132, 146) | `unicode_escape_chain` | Human-readable punctuation was serialized as repeated JSON Unicode escapes; three or more escapes on each line matched the obfuscation heuristic. | Replaced the escapes with their direct UTF-8 characters (`—`, `→`, `≠`). The JSON string values and evaluation meaning are unchanged. |
+| `skills/funnel-ad-creative/SKILL.md` and two bundled references | Path portability after rename | Cross-skill links pointed outside the independently installable bundle. | Replaced them with named handoffs to `ads` and its concrete `meta-decision-system.md` reference. Local in-bundle links remain concrete Markdown links. |
+
+The older Hermes scanner therefore accounts for 14 `ads` findings: eight `path_traversal`, one `prompt_injection_ignore`, and five `unicode_escape_chain`. The current upstream scanner masks Markdown link destinations and reproduced six findings before the patch (the critical injection signature plus five Unicode chains); both scanner generations are clean for those detectors after the patch.
 
 ## PLF Walker
 

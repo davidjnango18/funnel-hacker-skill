@@ -10,7 +10,7 @@
 - **Evidence level:** `research_backed`
 - **Temporal sensitivity:** `semi-evergreen`; empirical generalizations are durable hypotheses, but category/market fit and cited datasets require verification
 - **Primary funnel stages:** market strategy, acquisition, brand/creative systems, distribution
-- **Recommended for:** `marketing-plan`, `product-marketing`, `ads`, `ad-creative`, `competitor-profiling`, `customer-research`
+- **Recommended for:** `marketing-plan`, `product-marketing`, `ads`, `funnel-ad-creative`, `competitor-profiling`, `customer-research`
 
 ## Why this source matters
 

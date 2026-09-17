@@ -122,7 +122,7 @@ Loops are grouped by function. Naming follows the "The X loop" convention.
 - **Check cadence**: Every 2–3 days
 - **Acts when**: An ad shows rising frequency + declining CTR/CVR past a real significance bar.
 - **Purpose**: Refresh creative before CPA drifts up as ads fatigue.
-- **Skills used**: `ads`, `ad-creative`, `analytics`
+- **Skills used**: `ads`, `funnel-ad-creative`, `analytics`
 - **Loop body**:
   1. Pull per-ad metrics: CTR, frequency, CPA, spend, trend vs. baseline.
   2. Flag fatiguing ads and clear winners.
@@ -135,9 +135,9 @@ Loops are grouped by function. Naming follows the "The X loop" convention.
 
 ### The daily-creative-drop loop
 - **Check cadence**: Daily (early morning, so the batch is ready when the media buyer sits down)
-- **Acts when**: The grounded inputs corpus exists and the required inputs are populated — `inputs/winning-ads/` and `inputs/reviews/` (required; `inputs/comments/` and `brand/` strongly recommended, matching ad-creative's grounding rules). If a required input is empty, the loop asks for inputs instead of generating.
+- **Acts when**: The grounded inputs corpus exists and the required inputs are populated — `inputs/winning-ads/` and `inputs/reviews/` (required; `inputs/comments/` and `brand/` strongly recommended, matching funnel-ad-creative's grounding rules). If a required input is empty, the loop asks for inputs instead of generating.
 - **Purpose**: Keep creative volume ahead of fatigue — a standing batch of fresh static concepts to test, so scaling never stalls waiting on production.
-- **Skills used**: `ad-creative` (Mode 3 + static ad template library), `customer-research`
+- **Skills used**: `funnel-ad-creative` (Mode 3 + static ad template library), `customer-research`
 - **Loop body**:
   1. Read the inputs corpus: `inputs/winning-ads/`, `inputs/reviews/`, `inputs/comments/`, and `brand/`.
   2. Generate the batch (e.g., 50 concepts) cycling all 15 static templates, 3-4 variations each, every concept grounded in a cited source.
@@ -153,7 +153,7 @@ Loops are grouped by function. Naming follows the "The X loop" convention.
 - **Check cadence**: Monthly (first business day, reading the prior month)
 - **Acts when**: The account had meaningful creative activity last month — new concepts launched with enough delivery to judge (respect the impression/spend thresholds in `ads`). If nothing launched or nothing cleared thresholds, note that and skip.
 - **Purpose**: Close the creative strategy loop — turn last month's results into next month's evidence-ranked slate, so the roadmap learns instead of drifting.
-- **Skills used**: `ad-creative` (Mode 4 + creative-roadmap reference), `ads` (decision thresholds), `analytics`
+- **Skills used**: `funnel-ad-creative` (Mode 4 + creative-roadmap reference), `ads` (decision thresholds), `analytics`
 - **Loop body**:
   1. Pull last month's ad performance via the platform CLIs; map results to the month's roadmap concepts.
   2. Draft the retro artifact (`retros/YYYY-MM.md`): winners with the why, losers with funnel-stage diagnosis, single-metric wins, learnings, kills.

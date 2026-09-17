@@ -94,7 +94,7 @@ The 13-section plan structure stays consistent across client types. What changes
 
 ### Skills emphasis
 - `onboarding`, `paywalls`, `emails`
-- `ads`, `ad-creative` (heavy creative iteration)
+- `ads`, `funnel-ad-creative` (heavy creative iteration)
 - `referrals`
 - `pricing` for annual default + tier consolidation
 
@@ -342,7 +342,7 @@ The 13-section plan structure stays consistent across client types. What changes
 - Subscription option for repeat purchases
 
 ### Skills emphasis
-- `ads` + `ad-creative` (heavy weight)
+- `ads` + `funnel-ad-creative` (heavy weight)
 - `emails` for post-purchase + abandoned cart
 - `referrals` with gifting
 - `pricing` for bundles + subscription option

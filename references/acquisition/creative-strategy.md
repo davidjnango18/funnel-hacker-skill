@@ -48,4 +48,4 @@ Prefer testing materially different angles before minor execution details when u
 
 ## Recommended specialists
 
-`ad-angle-generator`, `hook-battery`, `ad-creative`, `ad-creative-audit`, `creative-brief`, `copywriting`, `customer-research`, `ab-testing`
+`ad-angle-generator`, `hook-battery`, `funnel-ad-creative`, `ad-creative-audit`, `creative-brief`, `copywriting`, `customer-research`, `ab-testing`

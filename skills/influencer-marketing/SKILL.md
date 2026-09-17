@@ -1,6 +1,6 @@
 ---
 name: influencer-marketing
-description: "When the user wants to run influencer, creator, or ambassador partnerships to promote their product — finding and vetting partners, structuring deals, briefing creators, disclosure compliance, and measuring ROI. Also use when the user mentions 'influencer marketing,' 'creator partnerships,' 'sponsorships,' 'YouTube sponsorships,' 'podcast sponsorships,' 'brand ambassador,' 'ambassador program,' 'creator program,' 'UGC creators,' 'tech UGC,' 'UGC creator program,' 'creator network,' 'B2B influencers,' 'thought leader ads,' 'gifting,' 'product seeding,' 'whitelisting creator content,' 'how much to pay an influencer,' or 'FTC disclosure.' For affiliate/referral payout mechanics, see referrals. For community-led advocacy, see community-marketing. For turning creator content into paid ads, see ad-creative."
+description: "When the user wants to run influencer, creator, or ambassador partnerships to promote their product — finding and vetting partners, structuring deals, briefing creators, disclosure compliance, and measuring ROI. Also use when the user mentions 'influencer marketing,' 'creator partnerships,' 'sponsorships,' 'YouTube sponsorships,' 'podcast sponsorships,' 'brand ambassador,' 'ambassador program,' 'creator program,' 'UGC creators,' 'tech UGC,' 'UGC creator program,' 'creator network,' 'B2B influencers,' 'thought leader ads,' 'gifting,' 'product seeding,' 'whitelisting creator content,' 'how much to pay an influencer,' or 'FTC disclosure.' For affiliate/referral payout mechanics, see referrals. For community-led advocacy, see community-marketing. For turning creator content into paid ads, see funnel-ad-creative."
 metadata:
   version: 1.1.0
 ---
@@ -97,7 +97,7 @@ Move beyond "pay for a post."
 Ask for their **rate card first** — it sets an anchor you respond to rather than naming a number blind.
 
 **Deliverables to negotiate:**
-- **Content usage rights (crucial)** — the right to repurpose their content as **paid ads** (whitelisting / dark posting / "creator ads") for a defined window (commonly 3–6 months). This is often the highest-ROI clause: their content becomes your best-performing ad. Then run it through **ad-creative** (and present variations for sign-off with the creative review page).
+- **Content usage rights (crucial)** — the right to repurpose their content as **paid ads** (whitelisting / dark posting / "creator ads") for a defined window (commonly 3–6 months). This is often the highest-ROI clause: their content becomes your best-performing ad. Then run it through **funnel-ad-creative** (and present variations for sign-off with the creative review page).
 - **Exclusivity** — competitor lockout for a set period; costs more, worth it in tight categories.
 - **Format & specifics** — dedicated video vs. a 60-second integration; number of posts; stories vs. feed; posting window; approval rights; how long it stays up.
 - **Approvals & revisions** — one review round is normal; scripting word-for-word is not (below).
@@ -127,7 +127,7 @@ Do **not** script the creator word-for-word — they know their audience better 
 - **Guardrails** — what *not* to say (don't promise features that don't exist), the disclosure requirement, and any brand redlines.
 - **Creative freedom** — explicitly grant it. The integration should live inside their normal content style.
 
-Ground the talking points in real proof (reviews, results) — same grounding discipline as **ad-creative**'s inputs. Never hand a creator a claim you can't back.
+Ground the talking points in real proof (reviews, results) — same grounding discipline as **funnel-ad-creative**'s inputs. Never hand a creator a claim you can't back.
 
 ## 6. Measurement & ROI
 
@@ -203,7 +203,7 @@ Dedicated creator-discovery/CRM platforms (e.g., Modash, GRIN, Aspire, Upfluence
 
 - **referrals** — affiliate/commission tracking and payout rails (the performance side of creator deals)
 - **community-marketing** — community-led advocacy and the unpaid advocate program
-- **ad-creative** — repurpose creator content into paid ads (whitelisting); creative review page for sign-off
+- **funnel-ad-creative** — repurpose creator content into paid ads (whitelisting); creative review page for sign-off
 - **cold-email** — the creator outreach itself (personalization, deliverability, follow-up)
 - **customer-research** — find existing advocates and ground the talking points
 - **ai-seo** — the branded-search/direct attribution blind spot that hides influencer impact

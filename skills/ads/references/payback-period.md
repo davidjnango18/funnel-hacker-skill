@@ -62,7 +62,7 @@ This composes with breakeven CPL/CPC math in [b2b-paid-playbook.md](b2b-paid-pla
 
 **OOH without social amplification is a waste of money.** Out-of-home (billboards, transit, print) has no click, no pixel, no deterministic loop on its own. It only pays back when it's engineered to be photographed, posted, and amplified on social — the OOH buys the moment, social buys the reach. Running OOH with no social plan is buying awareness you can't measure or compound.
 
-**Narrative momentum** (ad copy): the strongest-performing ads carry a story forward rather than restate a pitch — each line earns the next, building tension toward the CTA instead of front-loading features. Pair it with the discipline of **testing one variable at a time** (copy, then creative, then audience) so you can tell what actually moved payback. Depth on both lives in the **ad-creative** skill; this file only flags them as levers that change your CAC.
+**Narrative momentum** (ad copy): the strongest-performing ads carry a story forward rather than restate a pitch — each line earns the next, building tension toward the CTA instead of front-loading features. Pair it with the discipline of **testing one variable at a time** (copy, then creative, then audience) so you can tell what actually moved payback. Depth on both lives in the **funnel-ad-creative** skill; this file only flags them as levers that change your CAC.
 
 ---
 

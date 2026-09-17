@@ -90,39 +90,6 @@ skills:
     priority: medium
     notes: "Vendored RMBC methodology with local Hermes portability and evidence-first overrides."
     path: skills/ad-angle-generator/SKILL.md
-  - skill_name: ad-creative
-    source: corey-marketingskills
-    purpose: "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platform. Also use when the user mentions 'ad copy variations,' 'ad creative,' 'generate headlines,' 'RSA headlines,' 'bulk ad copy,' 'ad iterations,' 'creative testing,' 'write me some ads,' 'Facebook ad copy,' 'Google ad headlines,' 'LinkedIn ad text,' 'static ads,' 'ad templates,' 'iMessage ad,' 'chat reveal ad,' 'ChatGPT ad,' 'Apple Notes ad,' 'AirDrop ad,' 'creative strategy,' 'creative roadmap,' 'creative retro,' 'hook writing,' 'creative review page,' 'present ad creative for approval,' 'motion video ad,' 'faceless video ad,' 'UGC ad,' 'greenscreen ad,' 'TikTok/Reels ad format,' 'which ad format to make,' 'Meta ad format tier list,' or 'creative format taxonomy.' Use this whenever someone needs to produce ad copy at scale or iterate on existing ads. For campaign strategy and targeting, see ads. For landing page copy, see copywriting."
-    triggers:
-      - "ad creative"
-      - "ad copy variations,"
-      - "ad creative,"
-      - "generate headlines,"
-      - "rsa headlines,"
-      - "bulk ad copy,"
-      - "ad iterations,"
-      - "creative testing,"
-    stage: traffic
-    input_types:
-      - "ad copy/creative"
-      - "audience"
-      - "platform"
-      - "performance data optional"
-    output_types:
-      - "ad/creative analysis or concepts"
-      - "testing notes"
-    dependencies: []
-    recommended_with:
-      - "marketing-psychology"
-      - "customer-research"
-      - "marketing-loops"
-      - "copy-editing"
-      - "copywriting"
-      - "ab-testing"
-    avoid_when: []
-    priority: high
-    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
-    path: skills/ad-creative/SKILL.md
   - skill_name: ad-creative-audit
     source: dtc-copywriting-skills
     purpose: "Audit paid media ad creative (copy + visual direction) against RMBC and DR principles — score hook, mechanism, proof, CTA, and visual-copy alignment with actionable fixes."
@@ -151,7 +118,7 @@ skills:
     path: skills/ad-creative-audit/SKILL.md
   - skill_name: ads
     source: corey-marketingskills
-    purpose: "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ROAS,' 'CPA,' 'ad campaign,' 'retargeting,' 'audience targeting,' 'Google Ads,' 'Facebook ads,' 'LinkedIn ads,' 'ad budget,' 'cost per click,' 'ad spend,' 'should I run ads,' 'ABM,' 'account-based marketing,' 'B2B ads,' 'lead quality,' 'negative keywords,' 'Performance Max,' 'thought leader ads,' or 'when should I kill an ad.' Use this for campaign strategy, audience targeting, bidding, and optimization. For bulk ad creative generation and iteration, see ad-creative. For landing page optimization, see cro."
+    purpose: "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ROAS,' 'CPA,' 'ad campaign,' 'retargeting,' 'audience targeting,' 'Google Ads,' 'Facebook ads,' 'LinkedIn ads,' 'ad budget,' 'cost per click,' 'ad spend,' 'should I run ads,' 'ABM,' 'account-based marketing,' 'B2B ads,' 'lead quality,' 'negative keywords,' 'Performance Max,' 'thought leader ads,' or 'when should I kill an ad.' Use this for campaign strategy, audience targeting, bidding, and optimization. For bulk ad creative generation and iteration, see funnel-ad-creative. For landing page optimization, see cro."
     triggers:
       - "ads"
       - "ppc,"
@@ -173,8 +140,8 @@ skills:
     dependencies: []
     recommended_with:
       - "competitor-profiling"
+      - "funnel-ad-creative"
       - "customer-research"
-      - "ad-creative"
       - "attribution"
       - "copywriting"
       - "ab-testing"
@@ -293,7 +260,7 @@ skills:
       - "optional jq"
     recommended_with:
       - "ads"
-      - "ad-creative"
+      - "funnel-ad-creative"
       - "ad-creative-audit"
       - "competitor-profiling"
     avoid_when:
@@ -324,8 +291,8 @@ skills:
       - "specialist recommendations or deliverable"
     dependencies: []
     recommended_with:
+      - "funnel-ad-creative"
       - "customer-research"
-      - "ad-creative"
       - "attribution"
       - "analytics"
       - "cro"
@@ -1122,6 +1089,39 @@ skills:
     priority: medium
     notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
     path: skills/free-tools/SKILL.md
+  - skill_name: funnel-ad-creative
+    source: corey-marketingskills
+    purpose: "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platform. Also use when the user mentions 'ad copy variations,' 'ad creative,' 'generate headlines,' 'RSA headlines,' 'bulk ad copy,' 'ad iterations,' 'creative testing,' 'write me some ads,' 'Facebook ad copy,' 'Google ad headlines,' 'LinkedIn ad text,' 'static ads,' 'ad templates,' 'iMessage ad,' 'chat reveal ad,' 'ChatGPT ad,' 'Apple Notes ad,' 'AirDrop ad,' 'creative strategy,' 'creative roadmap,' 'creative retro,' 'hook writing,' 'creative review page,' 'present ad creative for approval,' 'motion video ad,' 'faceless video ad,' 'UGC ad,' 'greenscreen ad,' 'TikTok/Reels ad format,' 'which ad format to make,' 'Meta ad format tier list,' or 'creative format taxonomy.' Use this whenever someone needs to produce ad copy at scale or iterate on existing ads. For campaign strategy and targeting, see ads. For landing page copy, see copywriting."
+    triggers:
+      - "funnel ad creative"
+      - "ad copy variations,"
+      - "ad creative,"
+      - "generate headlines,"
+      - "rsa headlines,"
+      - "bulk ad copy,"
+      - "ad iterations,"
+      - "creative testing,"
+    stage: traffic
+    input_types:
+      - "ad copy/creative"
+      - "audience"
+      - "platform"
+      - "performance data optional"
+    output_types:
+      - "ad/creative analysis or concepts"
+      - "testing notes"
+    dependencies: []
+    recommended_with:
+      - "marketing-psychology"
+      - "customer-research"
+      - "marketing-loops"
+      - "copy-editing"
+      - "copywriting"
+      - "ab-testing"
+    avoid_when: []
+    priority: high
+    notes: "Vendored Corey Haines marketing skill with project-local context and evidence-first overrides."
+    path: skills/funnel-ad-creative/SKILL.md
   - skill_name: funnel-architecture
     source: dtc-copywriting-skills
     purpose: "Design complete DTC sales funnel architecture — maps the full customer journey from ad to email follow-up with RMBC-aligned copy approach, conversion goals, and KPI targets per step."
@@ -1261,7 +1261,7 @@ skills:
     path: skills/hook-battery/SKILL.md
   - skill_name: image
     source: corey-marketingskills
-    purpose: "When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or brand assets. Also use when the user mentions 'AI image generation,' 'generate an image,' 'create a graphic,' 'product mockup,' 'hero image,' 'social media graphic,' 'banner image,' 'cover photo,' 'profile banner,' 'listing screenshot,' 'Flux,' 'Flux Kontext,' 'Midjourney,' 'DALL-E,' 'GPT Image,' 'ChatGPT Images,' 'Ideogram,' 'Gemini image,' 'Nano Banana,' 'Recraft,' 'Stable Diffusion,' 'Canva,' 'Figma,' 'image optimization,' 'compress images,' 'WebP,' or 'OG image.' Use this for general-purpose marketing image creation and optimization. For paid ad image creative and platform-specific ad specs, see ad-creative. For video production, see video."
+    purpose: "When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or brand assets. Also use when the user mentions 'AI image generation,' 'generate an image,' 'create a graphic,' 'product mockup,' 'hero image,' 'social media graphic,' 'banner image,' 'cover photo,' 'profile banner,' 'listing screenshot,' 'Flux,' 'Flux Kontext,' 'Midjourney,' 'DALL-E,' 'GPT Image,' 'ChatGPT Images,' 'Ideogram,' 'Gemini image,' 'Nano Banana,' 'Recraft,' 'Stable Diffusion,' 'Canva,' 'Figma,' 'image optimization,' 'compress images,' 'WebP,' or 'OG image.' Use this for general-purpose marketing image creation and optimization. For paid ad image creative and platform-specific ad specs, see funnel-ad-creative. For video production, see video."
     triggers:
       - "image"
       - "ai image generation,"
@@ -1281,7 +1281,7 @@ skills:
     dependencies: []
     recommended_with:
       - "directory-submissions"
-      - "ad-creative"
+      - "funnel-ad-creative"
       - "seo-audit"
       - "social"
       - "video"
@@ -1292,7 +1292,7 @@ skills:
     path: skills/image/SKILL.md
   - skill_name: influencer-marketing
     source: corey-marketingskills
-    purpose: "When the user wants to run influencer, creator, or ambassador partnerships to promote their product — finding and vetting partners, structuring deals, briefing creators, disclosure compliance, and measuring ROI. Also use when the user mentions 'influencer marketing,' 'creator partnerships,' 'sponsorships,' 'YouTube sponsorships,' 'podcast sponsorships,' 'brand ambassador,' 'ambassador program,' 'creator program,' 'UGC creators,' 'tech UGC,' 'UGC creator program,' 'creator network,' 'B2B influencers,' 'thought leader ads,' 'gifting,' 'product seeding,' 'whitelisting creator content,' 'how much to pay an influencer,' or 'FTC disclosure.' For affiliate/referral payout mechanics, see referrals. For community-led advocacy, see community-marketing. For turning creator content into paid ads, see ad-creative."
+    purpose: "When the user wants to run influencer, creator, or ambassador partnerships to promote their product — finding and vetting partners, structuring deals, briefing creators, disclosure compliance, and measuring ROI. Also use when the user mentions 'influencer marketing,' 'creator partnerships,' 'sponsorships,' 'YouTube sponsorships,' 'podcast sponsorships,' 'brand ambassador,' 'ambassador program,' 'creator program,' 'UGC creators,' 'tech UGC,' 'UGC creator program,' 'creator network,' 'B2B influencers,' 'thought leader ads,' 'gifting,' 'product seeding,' 'whitelisting creator content,' 'how much to pay an influencer,' or 'FTC disclosure.' For affiliate/referral payout mechanics, see referrals. For community-led advocacy, see community-marketing. For turning creator content into paid ads, see funnel-ad-creative."
     triggers:
       - "influencer marketing"
       - "influencer marketing,"
@@ -1312,8 +1312,8 @@ skills:
     dependencies: []
     recommended_with:
       - "community-marketing"
+      - "funnel-ad-creative"
       - "customer-research"
-      - "ad-creative"
       - "attribution"
       - "cold-email"
       - "referrals"
@@ -1480,10 +1480,10 @@ skills:
     dependencies: []
     recommended_with:
       - "marketing-psychology"
+      - "funnel-ad-creative"
       - "product-marketing"
       - "content-strategy"
       - "copy-editing"
-      - "ad-creative"
       - "copywriting"
     avoid_when: []
     priority: medium
@@ -1572,8 +1572,8 @@ skills:
       - "specialist recommendations or deliverable"
     dependencies: []
     recommended_with:
+      - "funnel-ad-creative"
       - "programmatic-seo"
-      - "ad-creative"
       - "seo-audit"
       - "pricing"
       - "ai-seo"
@@ -2480,7 +2480,7 @@ skills:
     path: skills/soap-opera-sequence/SKILL.md
   - skill_name: social
     source: corey-marketingskills
-    purpose: "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms, or wants to do social listening and engagement triage. Also use when the user mentions 'LinkedIn post,' 'Twitter thread,' 'social media,' 'content calendar,' 'social scheduling,' 'engagement,' 'viral content,' 'what should I post,' 'repurpose this content,' 'tweet ideas,' 'LinkedIn carousel,' 'social media strategy,' 'grow my following,' 'TikTok video,' 'Reels,' 'Shorts,' 'video script,' 'video hook,' 'short-form video,' 'create a reel,' 'social listening,' 'brand mentions,' 'competitor monitoring,' 'top posts to comment on,' 'find people asking for,' 'carousel,' 'slide-by-slide,' or 'document post.' Use this for social media content creation, repurposing, scheduling, short-form video scripting, and social listening. For broader content strategy, see content-strategy. For paid ads, see ad-creative. For earned media, see public-relations."
+    purpose: "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms, or wants to do social listening and engagement triage. Also use when the user mentions 'LinkedIn post,' 'Twitter thread,' 'social media,' 'content calendar,' 'social scheduling,' 'engagement,' 'viral content,' 'what should I post,' 'repurpose this content,' 'tweet ideas,' 'LinkedIn carousel,' 'social media strategy,' 'grow my following,' 'TikTok video,' 'Reels,' 'Shorts,' 'video script,' 'video hook,' 'short-form video,' 'create a reel,' 'social listening,' 'brand mentions,' 'competitor monitoring,' 'top posts to comment on,' 'find people asking for,' 'carousel,' 'slide-by-slide,' or 'document post.' Use this for social media content creation, repurposing, scheduling, short-form video scripting, and social listening. For broader content strategy, see content-strategy. For paid ads, see funnel-ad-creative. For earned media, see public-relations."
     triggers:
       - "social"
       - "linkedin post,"
@@ -2672,7 +2672,7 @@ skills:
     path: skills/upsell-sequence-writer/SKILL.md
   - skill_name: video
     source: corey-marketingskills
-    purpose: "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
+    purpose: "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see funnel-ad-creative."
     triggers:
       - "video"
       - "video production,"
@@ -2692,7 +2692,7 @@ skills:
     dependencies: []
     recommended_with:
       - "marketing-psychology"
-      - "ad-creative"
+      - "funnel-ad-creative"
       - "copywriting"
       - "social"
     avoid_when: []

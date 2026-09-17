@@ -7,7 +7,7 @@ The collection covers public ad research, landing pages, VSLs and webinars, PLF/
 ## What is included
 
 - 44 complete DTC/RMBC skills from `dtc-copywriting-skills`.
-- 50 complete general marketing skills plus their referenced tool guides from `coreyhaines31/marketingskills`.
+- 50 complete general marketing skills plus their referenced tool guides from `coreyhaines31/marketingskills`; its locally hardened `ad-creative` variant is published as `funnel-ad-creative` to avoid colliding with canonical preinstalled copies.
 - Selected complete skills: `plf-walker`, `translation`, `apify-ads-intelligence`, and `video-analysis`.
 - One local `funnel-hacking-orchestrator` that performs progressive-disclosure routing.
 - A source-attributed Markdown knowledge base with 12 ingested source records, 11 source notes, 15 thematic syntheses, and a live-evidence policy.

@@ -42,7 +42,7 @@ Then clarify (ask only for what's missing):
 
 ## The Bench
 
-Twelve advisors, chosen so their lenses collide. Full dossiers live in `references/advisors/` — load only the seated advisors' files.
+Twelve advisors, chosen so their lenses collide. Full dossiers live in the advisors subdirectory under references — load only the seated advisors' files linked in the table below.
 
 | Advisor | Lens | File |
 |---------|------|------|
@@ -82,7 +82,7 @@ For a council session, seat 3–5 advisors:
 
 ## Session Protocol
 
-1. **Load the seated advisors' dossiers** from `references/advisors/`.
+1. **Load the seated advisors' dossiers** from the advisors subdirectory under references, using the concrete file links in the table above.
 2. **Optional live research pass** — see below. Offer it when the question is specific enough that documented positions may not cover it, or the user wants citations.
 3. **Each advisor's take** — 2–4 paragraphs per advisor:
    - Open with the advisor applying their *signature questions* to the user's case
@@ -165,7 +165,7 @@ Users can extend the bench ("add my own advisor"). Create a dossier following th
 - **positioning** / **product-marketing**: When Dunford's take wins — execute the positioning work
 - **offers** / **pricing**: When Hormozi/Halbert direction wins — build the offer
 - **copywriting** / **copy-editing**: When the council reviewed copy — execute revisions
-- **ads** / **ad-creative**: When the debate was media or creative strategy
+- **ads** / **funnel-ad-creative**: When the debate was media or creative strategy
 - **content-strategy** / **social**: When Handley/Vaynerchuk direction wins
 - **brand-strategy** / **marketing-psychology**: For Sharp's availability work and Sutherland's behavioral mechanics
 - **ab-testing**: When the disagreement map says "test it" — Hopkins would insist

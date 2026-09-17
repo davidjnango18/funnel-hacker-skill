@@ -122,5 +122,5 @@ Check [heygen.com/pricing](https://www.heygen.com/pricing) for current prices â€
 
 - video
 - social
-- ad-creative
+- funnel-ad-creative
 - sales-enablement

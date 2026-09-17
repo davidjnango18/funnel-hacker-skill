@@ -56,10 +56,10 @@ sources:
     url: "https://github.com/coreyhaines31/marketingskills"
     commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
     license: MIT
-    selection: "all 50 skills and referenced tool guides"
+    selection: "all 50 skills and referenced tool guides; ad-creative installed locally as funnel-ad-creative"
     skills:
       - ab-testing
-      - ad-creative
+      - funnel-ad-creative
       - ads
       - ai-seo
       - analytics
@@ -108,7 +108,7 @@ sources:
       - sms
       - social
       - video
-    local_modifications: "Kept all skills; copied each referenced integration guide and optional CLI into its consuming skill; normalized project-local context and Windows-safe wording; added evidence-first rules."
+    local_modifications: "Kept all skills; installed upstream ad-creative as funnel-ad-creative to coexist with the canonical preinstalled skill; copied each referenced integration guide and optional CLI into its consuming skill; normalized project-local context and Windows-safe wording; added evidence-first rules and scanner-safe equivalent wording."
   - name: plf-walker
     url: "https://github.com/qwwiwi/plf-walker"
     commit: 51f064381d02b1ac1161a3b1ccc5b71af1e082d5

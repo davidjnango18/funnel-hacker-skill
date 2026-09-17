@@ -27,7 +27,7 @@ The plan's Section 11 makes this thesis explicit by:
 | `content-strategy` | Plan content topics, pillars, cadence | Setting the editorial calendar |
 | `competitors` | Build vs-pages and alternative-to-pages | Capture high-intent SERPs against competitors |
 | `ads` | Plan and structure paid campaigns | Apple Search Ads, Meta, Google, LinkedIn |
-| `ad-creative` | Generate ad variations and creative | Iterate ad creative across platforms |
+| `funnel-ad-creative` | Generate ad variations and creative | Iterate ad creative across platforms |
 | `social` | Plan and write social media content | LinkedIn, Twitter/X, Instagram, TikTok |
 | `typefully` | Schedule/post tweets, threads, LinkedIn content | Cadence operations for founder-led channels |
 | `cold-email` | Write B2B cold outreach + sequences | Outbound for B2B SaaS / hybrid businesses |

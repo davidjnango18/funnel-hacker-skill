@@ -320,6 +320,6 @@ the app's brand maturity tier — they may be deliberate choices for Dominant ap
 ## Related Skills
 
 - **cro**: For optimizing the conversion of web-based landing pages that drive app installs
-- **ad-creative**: For creating App Store and Google Play ad creatives
+- **funnel-ad-creative**: For creating App Store and Google Play ad creatives
 - **analytics**: For setting up install attribution and in-app event tracking
 - **customer-research**: For understanding user needs and language to inform listing copy

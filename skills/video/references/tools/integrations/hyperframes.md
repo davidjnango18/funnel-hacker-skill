@@ -177,4 +177,4 @@ const frames = metrics.map(m => ({
 
 - video
 - social
-- ad-creative
+- funnel-ad-creative

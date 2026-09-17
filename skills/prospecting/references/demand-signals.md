@@ -34,7 +34,7 @@ Don't start broad collection until the brief is sharp. Pull from `.agents/produc
 
 ## Step 2 — Mine the five signal buckets
 
-Search several angles, not one query repeated. Adapt wording to how the audience actually talks (mine their vocabulary from organic content first — see the ad-creative hook-system's organic-language note for the same idea).
+Search several angles, not one query repeated. Adapt wording to how the audience actually talks (mine their vocabulary from organic content first — see the funnel-ad-creative hook-system's organic-language note for the same idea).
 
 1. **Explicit demand** — "looking for," "recommend a tool for," "alternative to [X]," "does anything exist that," "how do you all handle."
 2. **Pain** — "takes hours," "so manual," "hate that," "keeps breaking," "biggest frustration with," "why is there no."
@@ -118,7 +118,7 @@ Lead with the most actionable evidence, in this order:
 6. **Seven-day manual outreach plan** — a low-volume validation sequence (e.g., contact the top 3 with one source-based question; share a mockup only after they confirm the pain; target three conversations and one design-partner commitment).
 7. **Limits** — what evidence is missing and what must be confirmed through real conversations.
 
-For a shareable standalone HTML version of this report, the JSON→HTML generator pattern in ad-creative's [creative-review-page.md](../../ad-creative/references/creative-review-page.md) is the model (escape every value; keep it self-contained).
+For a shareable standalone HTML version of this report, the JSON→HTML generator pattern in funnel-ad-creative's [creative-review-page.md](../../funnel-ad-creative/references/creative-review-page.md) is the model (escape every value; keep it self-contained).
 
 ## The honesty rules (non-negotiable)
 

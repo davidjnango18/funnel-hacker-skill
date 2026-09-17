@@ -24,7 +24,7 @@ These routes name knowledge lenses; they do not require a repository-level knowl
 
 | Need | Lead | Optional analysts |
 | --- | --- | --- |
-| public ad libraries | `apify-ads-intelligence` | `ads`, `ad-creative`, `ad-creative-audit` |
+| public ad libraries | `apify-ads-intelligence` | `ads`, `funnel-ad-creative`, `ad-creative-audit` |
 | competitor URLs/dossier | `competitor-profiling` | `customer-research`, `competitor-offer-analysis` |
 | reviews, transcripts, VOC | `customer-research` | `unified-research-synthesizer`, `product-marketing` |
 | local video evidence | `video-analysis` | asset-specific copy specialist |
@@ -36,7 +36,7 @@ Do not load `video-analysis` for transcript-only spoken-copy questions. Do not l
 Use `apify-ads-intelligence` to collect. Then choose from:
 
 - `ads`: paid-media strategy, platform context, targeting, account interpretation;
-- `ad-creative`: creative generation/iteration and format strategy;
+- `funnel-ad-creative`: creative generation/iteration and format strategy;
 - `ad-creative-audit`: RMBC creative heuristic audit;
 - `ad-angle-generator`: distinct strategic angles;
 - `hook-battery`: hook families;

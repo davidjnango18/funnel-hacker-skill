@@ -20,7 +20,7 @@ CORE_HIGH = {
     "funnel-hacking-orchestrator", "rmbc-context", "unified-research-synthesizer",
     "competitor-offer-analysis", "funnel-architecture", "funnel-audit",
     "customer-research", "product-marketing", "competitor-profiling", "cro",
-    "ads", "ad-creative", "analytics", "attribution", "ab-testing",
+    "ads", "funnel-ad-creative", "analytics", "attribution", "ab-testing",
     "plf-walker", "translation", "apify-ads-intelligence", "video-analysis",
 }
 
@@ -86,7 +86,7 @@ def stage_for(name: str) -> str:
         "orchestration": {"funnel-hacking-orchestrator", "write-copy", "marketing-plan", "marketing-council"},
         "collection": {"apify-ads-intelligence", "video-analysis", "competitor-profiling", "ingredient-research", "customer-research"},
         "research": {"rmbc-context", "unified-research-synthesizer", "product-marketing", "competitor-offer-analysis", "mechanism-ideation", "competitors"},
-        "traffic": {"ads", "ad-creative", "ad-creative-audit", "ad-angle-generator", "hook-battery", "fb-ad-copy", "creative-brief", "media-buying-brief", "ugc-brief"},
+        "traffic": {"ads", "funnel-ad-creative", "ad-creative-audit", "ad-angle-generator", "hook-battery", "fb-ad-copy", "creative-brief", "media-buying-brief", "ugc-brief"},
         "pre-frame": {"advertorial-writer", "webinar-registration-copy", "lead-writer", "lead-magnets", "free-offer-brief", "events", "plf-walker"},
         "funnel": {"funnel-architecture", "funnel-audit", "cro", "lander-copy", "order-form-cro", "checkout-abandonment", "thank-you-page", "signup", "paywalls", "popups"},
         "offer": {"offers", "offer-stack", "bonus-stack", "guarantee-writer", "scarcity-urgency", "pricing", "pricing-strategy", "upsell-script"},
@@ -185,7 +185,7 @@ def recommended_for(name: str, body: str, all_names: set[str]) -> list[str]:
             break
     curated = {
         "funnel-hacking-orchestrator": ["customer-research", "competitor-profiling", "funnel-architecture", "funnel-audit"],
-        "apify-ads-intelligence": ["ads", "ad-creative", "ad-creative-audit", "competitor-profiling"],
+        "apify-ads-intelligence": ["ads", "funnel-ad-creative", "ad-creative-audit", "competitor-profiling"],
         "video-analysis": ["vsl-script", "rmbc-copy-audit", "funnel-hacking-orchestrator"],
         "plf-walker": ["funnel-architecture", "emails", "competitor-offer-analysis", "translation"],
         "translation": ["copywriting", "customer-research", "funnel-hacking-orchestrator"],

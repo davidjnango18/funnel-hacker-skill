@@ -280,7 +280,7 @@ The full schema for `progress.md` and the resumption decision tree live in `refe
 - **`referrals`** — Deep work on Section 7 (Referral).
 - **`pricing`** — Deep work on Section 8 (Revenue).
 - **`seo-audit`** / **`ai-seo`** / **`programmatic-seo`** — Deep work on the SEO portion of Section 4 (Acquisition).
-- **`ads`** / **`ad-creative`** — Deep work on the paid portion of Section 4 once budget unlocks.
+- **`ads`** / **`funnel-ad-creative`** — Deep work on the paid portion of Section 4 once budget unlocks.
 - **`launch`** — Deep work on launch moments inside Section 4 / Section 9.
 
 ## Task-specific questions (used during INIT)
